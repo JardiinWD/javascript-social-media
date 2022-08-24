@@ -1,10 +1,15 @@
-/*#region Import e Variabili Palette colore */
+/*#region Import e Variabili  */
 
 /* Import font da Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Font Family & Weight */
 $font-family: 'Poppins', sans-serif;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
 
-/* Palette Colore */
+/* Palette Colori */
 $color-white: hsl(252, 30%, 100%);
 $color-light: hsl(252, 30%, 95%);
 $color-gray: hsl(252, 15%, 65%);
@@ -14,26 +19,15 @@ $color-success: hsl(120, 95%, 65%);
 $color-danger: hsl(0, 95%, 65%);
 $color-dark: hsl(252, 30%, 17%);
 $color-black: hsl(252, 30%, 10%);
+
+/* Dimensioni (Width/Heigt) principali */
+$container: 80%;
+
+/* Bordi e padding */
+$border-radius: 2rem;
+$card-border-radius: 1rem;
+$btn-padding: 0.6rem 2rem;
+$search-padding: 0.6rem 1rem;
+$card-padding: 1rem;
+
 /*#endregion */
-
-
-
-
-
-/* Regole generali foglio di stile */
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-}
-
-body {
-    font-family: $font-family;
-    color: $color-dark;
-}

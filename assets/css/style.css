@@ -1,9 +1,104 @@
-/* Import del mio file Navbar */
-/* Import del mio file variabili */
+/* Import del mio file Navbar */ /* Import del mio file variabili */ /*#region Import e Variabili  */
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-/* Variabile per il font */
-/* Regole generali foglio di stile */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/*#endregion */
+/* Tag navbar principale */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+#site_nav {
+  width: 100%;
+  background: hsl(252deg, 30%, 100%);
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Container dentro a Nav */
+#site_nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#site_nav a .nav_logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Search Bar */
+#site_nav .search-bar {
+  background: hsl(252deg, 30%, 95%);
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+}
+
+/* Input della search bar */
+#site_nav .search-bar input[type=search] {
+  background: transparent;
+  width: 30vw;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: hsl(252deg, 30%, 17%);
+}
+
+#site_nav .search-bar input[type=search]::-webkit-input-placeholder {
+  color: hsl(252deg, 15%, 65%);
+}
+
+#site_nav .search-bar input[type=search]::-moz-placeholder {
+  color: hsl(252deg, 15%, 65%);
+}
+
+#site_nav .search-bar input[type=search]:-ms-input-placeholder {
+  color: hsl(252deg, 15%, 65%);
+}
+
+#site_nav .search-bar input[type=search]::-ms-input-placeholder {
+  color: hsl(252deg, 15%, 65%);
+}
+
+#site_nav .search-bar input[type=search]::placeholder {
+  color: hsl(252deg, 15%, 65%);
+}
+
+#site_nav .create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+/* Immagine profilo utente */
+.profile-picture {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Import del mio file Globale */
+/* Import del mio file variabili */ /*#region Import e Variabili  */
+/* Import font da Google */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/*#endregion */
+/*#region Regole generali foglio di stile */
 *,
 *::after,
 *::before {
@@ -20,4 +115,61 @@
 body {
   font-family: "Poppins", sans-serif;
   color: hsl(252deg, 30%, 17%);
+  background-color: hsl(252deg, 30%, 95%);
+  overflow-x: hidden;
 }
+
+/* Regola fissa per il Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Regola Fissa per le immagini */
+img {
+  display: block;
+  width: 100%;
+}
+
+/*#endregion */
+/*#region Regole generali per i buttons */
+/* Regola fissa per i button */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: hsl(252deg, 75%, 60%);
+  color: hsl(252deg, 30%, 100%);
+}
+
+/*#endregion */
+/*#region Regole generali per i testi */
+.text-bold {
+  font-weight: 500;
+}
+
+.text-muted {
+  color: hsl(252deg, 15%, 65%);
+}
+
+/*#endregion */
+/* Import del mio file variabili */
+/*#region Import e Variabili  */
+/* Import font da Google */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/*#endregion */
