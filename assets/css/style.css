@@ -1,11 +1,11 @@
-/* Import del mio file Navbar */ /* Import del mio file variabili */ /*#region Import e Variabili  */
+/* Import del mio file Navbar */ /* Import del mio file variabili */
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* Font Family & Weight */
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/*#endregion */
+/* Position Sticky Rules */
 /* Tag navbar principale */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -91,13 +91,13 @@
 }
 
 /* Import del mio file Globale */
-/* Import del mio file variabili */ /*#region Import e Variabili  */
+/* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/*#endregion */
+/* Position Sticky Rules */
 /*#region Regole generali foglio di stile */
 *,
 *::after,
@@ -166,10 +166,9 @@ img {
 
 /*#endregion */
 /* Import del mio file variabili */
-/*#region Import e Variabili  */
 /* Import font da Google */
 /* Font Family & Weight */
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/*#endregion */
+/* Position Sticky Rules */

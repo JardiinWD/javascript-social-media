@@ -50,7 +50,7 @@
             <!-- /.left -->
             <div class="left">
                 <!-- /.profile -->
-                <a href="" class="profile">
+                <a class="profile">
                     <!-- /.profile-picture -->
                     <div class="profile-picture">
                         <img src="./assets/img/profile-8.jpg" alt="Profile Picture">
@@ -76,14 +76,109 @@
                         <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>                                            
                     </a>
                     <!-- /.menu-item  -->
-                    <a class="menu-item">
+                    <a class="menu-item" id="notificationsPopup">
                         <!-- /.uil uil-bell -->
-                        <span><i class="uil uil-bell"></i></span> <h3>Notifications</h3>                                          
+                        <span>
+                            <!-- /.uil uil-bell -->
+                            <i class="uil uil-bell"> 
+                                <!-- /.notification-count -->
+                                <small class="notification-count">9+</small> 
+                            </i>    
+                        </span> 
+                        <h3>Notifications</h3>
+                        <!-- /.notifications-popup --> 
+                        <div class="notifications-popup">
+                            <!-- Pensa a farli dinamici -->
+                            <!-- Keke -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-1.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>Keke Benjamin</b> ha accettato la tua richiesta
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                            </div>
+                            <!-- John -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-2.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>John Doe</b> ha commentato il tuo post
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">1 ora fa</small>
+                                </div>
+                            </div>                            
+                            <!-- Donald -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-3.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>Donald Trump</b> ha commentato il tuo post
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">1 ora fa</small>
+                                </div>
+                            </div> 
+                            <!-- Mary -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-4.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>Mary Oppong</b> e <b>altri 283</b> hanno messo like al tuo post
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">1 ora fa</small>
+                                </div>
+                            </div>
+                            <!-- Doris -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-5.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>Doris Y. Lartey</b> ha commentato un post in cui sei taggato
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">1 ora fa</small>
+                                </div>
+                            </div>                                                        
+                            <!-- Jane -->
+                            <div>
+                                <!-- /.profile-picture -->
+                                <div class="profile-picture">
+                                    <img src="./assets/img/profile-6.jpg">
+                                </div>
+                                <!-- /.notification-body -->
+                                <div class="notification-body">
+                                    <b>Jane Doe</b> ha commentato un post in cui sei taggato
+                                    <!-- /.text-muted -->
+                                    <small class="text-muted">1 ora fa</small>
+                                </div>
+                            </div>                            
+                        </div>                                   
                     </a>                    
-                    <!-- /.menu-item  -->
-                    <a class="menu-item">
-                        <!-- /.uil uil-envelope-alt -->
-                        <span><i class="uil uil-envelope-alt"></i></span> <h3>Messages</h3>                                           
+                    <!-- /.menu-item #messages-notifications  -->
+                    <a class="menu-item" id="messages-notifications">
+                        <span>
+                            <!-- /.uil uil-envelope-alt  -->
+                            <i class="uil uil-envelope-alt">
+                                <!-- /.notification-count -->
+                                <small class="notification-count">6</small>
+                            </i>
+                        </span> 
+                        <h3>Messages</h3>                                           
                     </a>
                     <!-- /.menu-item  -->
                     <a class="menu-item">
@@ -106,6 +201,8 @@
                         <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>                                      
                     </a>                                             
                 </div>
+                <!-- /.btn btn-primary -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
             <!-- /.middle -->    
             <div class="middle"></div>
@@ -113,6 +210,9 @@
             <div class="right"></div>
         </div>
     </main>
+
+    <!-- Continua da 27:48 -->
+    <!-- https://www.youtube.com/watch?v=AiFfDjmd0jU&list=PLByzBGZOe-fOb0UCSzT-QeUkruncKynnx&index=3 -->
 
     <!-- Link a JS -->
     <script src='./assets/js/app.js'></script>

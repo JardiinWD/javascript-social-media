@@ -1,0 +1,40 @@
+/* Import del mio file variabili */
+@import '../variables.scss';
+
+/*#region Regole Main */
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+/*#endregion */
+
+/*#region Left Zone */
+main .container .left {
+    height: max-content;
+    position: sticky;
+    top: $sticky-top-left;
+}
+
+.left .profile {
+    padding: $card-padding;
+    background: $color-white;
+    border-radius: $card-border-radius;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+/*#region Left Zone */
+
+/*#endregion */
+
+/*#endregion */

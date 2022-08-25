@@ -1,4 +1,3 @@
-/*#region Import e Variabili  */
 
 /* Import font da Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -30,4 +29,6 @@ $btn-padding: 0.6rem 2rem;
 $search-padding: 0.6rem 1rem;
 $card-padding: 1rem;
 
-/*#endregion */
+/* Position Sticky Rules */
+$sticky-top-left: 5.4rem;
+$sticky-top-right: -18rem;
