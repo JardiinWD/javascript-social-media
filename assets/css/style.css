@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import del mio file Navbar */ /* Import del mio file variabili */
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -131,6 +132,14 @@ main .container,
   position: relative;
 }
 
+/** Mixis per l'immagine della story
+* $image => Url immagine della stories
+*/
+/** 
+* $display => proprietà del display (flex)
+* $align => allineamento (verticale) dell'item
+* $justify => allineamento (orizzontale) dell'item
+*/
 /*#endregion */
 /*#region Left Zone */
 main .container .left {
@@ -287,23 +296,19 @@ main .container .left .sidebar {
 
 .middle .stories .story,
 .middle .create-post {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Story - Tutte le classi */
-.middle .stories {
-  /** Mixis per l'immagine della story
-  * $image => Url immagine della stories
-  */
-  /* Prima Story */
+.middle .stories { /* Prima Story */
   /* Seconda Story */
   /* Terza Story */
   /* Quarta Story */
@@ -448,6 +453,88 @@ main .container .left .sidebar {
 /*#endregion */
 /*#endregion */
 /*#region Right Zone */
+.main .container .right {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: sticky;
+  top: -18rem;
+  bottom: 0;
+}
+
+.right .messages {
+  background: hsl(252deg, 30%, 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+  /* Icon font size */
+  /* Search-bar Classes */
+  /* Categories Classes */
+  /* Message Class */
+}
+.right .messages .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.right .messages i {
+  font-size: 1.4rem;
+}
+.right .messages .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: hsl(252deg, 30%, 95%);
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+}
+.right .messages .search-bar input[type=text] {
+  background: transparent;
+  width: 30vw;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: hsl(252deg, 30%, 17%);
+}
+.right .messages .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.right .messages .categories h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 4px solid hsl(252deg, 30%, 95%);
+  padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+.right .messages .categories .active {
+  border-color: hsl(252deg, 30%, 17%);
+}
+.right .messages .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.right .messages .message:last-child {
+  margin: 0;
+}
+
 /*#endregion */
 /* Import del mio file Globale */
 /* Import del mio file variabili */

@@ -29,6 +29,25 @@ main .container,
     position: relative;
 }
 
+/** Mixis per l'immagine della story
+* $image => Url immagine della stories
+*/
+@mixin storyPictures($image) {
+    background: url($image) no-repeat center center/cover;
+}
+
+/** 
+* $display => proprietà del display (flex)
+* $align => allineamento (verticale) dell'item
+* $justify => allineamento (orizzontale) dell'item
+*/
+@mixin displayItems($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
 /*#endregion */
 
 /*#region Left Zone */
@@ -171,9 +190,7 @@ main .container .left .sidebar {
 
 .middle .stories .story,
 .middle .create-post {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
+    @include displayItems(flex, center, space-between);
 }
 
 /* Story - Tutte le classi */
@@ -201,13 +218,6 @@ main .container .left .sidebar {
     .story .name {
         z-index: 2;
     } 
-
-    /** Mixis per l'immagine della story
-    * $image => Url immagine della stories
-    */
-    @mixin storyPictures($image) {
-        background: url($image) no-repeat center center/cover;
-    }
 
     .story:nth-child(1) {@include storyPictures('./../../../assets/img/story-1.jpg')} /* Prima Story */
     .story:nth-child(2) {@include storyPictures('./../../../assets/img/story-2.jpg')}  /* Seconda Story */  
@@ -302,6 +312,73 @@ main .container .left .sidebar {
 /*#endregion */
 
 /*#region Right Zone */
+
+.main .container .right {
+    height: max-content;
+    position: sticky;
+    top: $sticky-top-right;
+    bottom: 0;
+}
+
+.right .messages {
+    background: $color-white;
+    border-radius: $card-border-radius;
+    padding: $card-padding;
+
+    .heading {
+        @include displayItems(flex, center, space-between);
+        margin-bottom: 1rem
+    }
+    /* Icon font size */
+    i {
+        font-size: 1.4rem;
+    }
+    /* Search-bar Classes */
+    .search-bar {
+        display: flex;
+        background: $color-light;
+        border-radius: $border-radius;
+        padding: $search-padding;
+        margin-bottom: 1rem;
+    }
+    .search-bar input[type="text"] {
+        background: transparent;
+        width: 30vw;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        color: $color-dark;
+    }
+    /* Categories Classes */
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .categories h6 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 4px solid $color-light;
+        padding-bottom: 0.5rem;
+        font-size: 0.85rem;
+    }
+    .categories .active {
+        border-color: $color-dark;
+    }
+    /* Message Class */
+    .message {
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .message:last-child {
+        margin: 0;
+    }
+}
+
+
+
+
 
 
 /*#endregion */
