@@ -46,7 +46,6 @@ main .container .left .profile {
     width: 100%;
 }
 
-/*#region Left Zone */
 main .container .left .sidebar {
     margin-top: 1rem;
     background: $color-white;
@@ -120,6 +119,7 @@ main .container .left .sidebar {
     text-align: center;
     padding: 1rem 0;
 }
+
 /* notifications-popup */
 .left .notifications-popup {
     position: absolute;
@@ -131,8 +131,10 @@ main .container .left .sidebar {
     padding: $card-padding;
     box-sizing: 0 0 2rem $color-primary;
     z-index: 8;
+    display: none;
 }
 
+/* Riquadro */
 .left .notifications-popup::before {
     content: "";
     width: 1.2rem;
@@ -144,9 +146,22 @@ main .container .left .sidebar {
     transform: rotate(45deg);
 }
 
+.left .notifications-popup > div {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;  
+}
 
+.left .notifications-popup small {
+    display: block;
+}
+
+/*#endregion */
+
+/*#region Middle Zone */
 
 
 /*#endregion */
 
-/*#endregion */
+

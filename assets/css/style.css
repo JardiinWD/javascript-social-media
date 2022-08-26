@@ -151,7 +151,6 @@ main .container .left .profile {
   width: 100%;
 }
 
-/*#region Left Zone */
 main .container .left .sidebar {
   margin-top: 1rem;
   background: hsl(252deg, 30%, 100%);
@@ -241,8 +240,10 @@ main .container .left .sidebar {
   -webkit-box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
           box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
   z-index: 8;
+  display: none;
 }
 
+/* Riquadro */
 .left .notifications-popup::before {
   content: "";
   width: 1.2rem;
@@ -255,7 +256,23 @@ main .container .left .sidebar {
           transform: rotate(45deg);
 }
 
+.left .notifications-popup > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.left .notifications-popup small {
+  display: block;
+}
+
 /*#endregion */
+/*#region Middle Zone */
 /*#endregion */
 /* Import del mio file Globale */
 /* Import del mio file variabili */
