@@ -441,6 +441,9 @@ main .container .left .sidebar {
 .middle .liked-by span:first-child {
   margin: 0;
 }
+.middle .liked-by p {
+  margin-left: 0.5rem;
+}
 
 /*#endregion */
 /*#endregion */
