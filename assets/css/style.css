@@ -7,7 +7,9 @@
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
 /* Position Sticky Rules */
+/* Modal Width & Height */
 /* Tag navbar principale */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -100,6 +102,7 @@
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
 /* Position Sticky Rules */
+/* Modal Width & Height */
 /*#region Regole Main */
 main {
   position: relative;
@@ -593,6 +596,36 @@ main .container .left .sidebar {
 
 /*#endregion */
 /*#endregion */
+/* Import del mio file per la Modale */
+/* Import del mio file variabili */
+/* Import font da Google */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/* Position Sticky Rules */
+/* Modal Width & Height */
+.customize-theme {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  font-size: 0.9rem;
+}
+
+.customize-theme .card {
+  background: hsl(252deg, 30%, 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 50%;
+}
+
 /* Import del mio file Globale */
 /* Import del mio file variabili */
 /* Import font da Google */
@@ -601,6 +634,7 @@ main .container .left .sidebar {
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
 /* Position Sticky Rules */
+/* Modal Width & Height */
 /*#region Regole generali foglio di stile */
 *,
 *::after,
@@ -675,3 +709,4 @@ img {
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
 /* Position Sticky Rules */
+/* Modal Width & Height */
