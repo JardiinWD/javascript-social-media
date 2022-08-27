@@ -462,6 +462,7 @@ main .container .left .sidebar {
   bottom: 0;
 }
 
+/*#region Messages  */
 .right .messages {
   background: hsl(252deg, 30%, 100%);
   border-radius: 1rem;
@@ -470,6 +471,7 @@ main .container .left .sidebar {
   /* Search-bar Classes */
   /* Categories Classes */
   /* Message Class */
+  /* Cerchietto verde per stato online */
 }
 .right .messages .heading {
   display: -webkit-box;
@@ -534,7 +536,62 @@ main .container .left .sidebar {
 .right .messages .message:last-child {
   margin: 0;
 }
+.right .messages .message p {
+  font-size: 0.8rem;
+}
+.right .messages .message .profile-picture {
+  position: relative;
+  overflow: visible;
+}
+.right .messages .profile-picture img {
+  border-radius: 50%;
+}
+.right .messages .message .profile-picture .active {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 3px solid hsl(252deg, 30%, 100%);
+  background: hsl(120deg, 95%, 65%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.right .messages .messages-requests {
+  color: hsl(252deg, 75%, 60%);
+}
 
+/*#endregion */
+/*#region Friend Requests */
+.right .friend-requests {
+  margin-top: 1rem;
+}
+.right .friend-requests h4 {
+  color: hsl(252deg, 15%, 65%);
+  margin: 1rem 0;
+}
+
+.right .request {
+  background: hsl(252deg, 30%, 100%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.7rem;
+}
+.right .request .info,
+.right .request .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.right .request .info {
+  margin-bottom: 1rem;
+}
+.right .request .info .profile-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+/*#endregion */
 /*#endregion */
 /* Import del mio file Globale */
 /* Import del mio file variabili */
