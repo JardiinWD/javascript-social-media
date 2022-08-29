@@ -7,19 +7,24 @@
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 *,
 *::after,
 *::before {
@@ -92,7 +97,12 @@ img {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /* Import del mio file Navbar */
@@ -102,7 +112,12 @@ img {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /* Tag navbar principale */
@@ -194,7 +209,12 @@ img {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole Main */
@@ -205,7 +225,7 @@ main {
 
 main .container {
   display: grid;
-  grid-template-columns: 18vw auto 20vw;
+  grid-template-columns: 15vw auto 20vw;
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem;
@@ -229,7 +249,7 @@ main .container,
   position: relative;
 }
 
-/** Mixis per l'immagine della story
+/** Mixin per l'immagine della story
 * $image => Url immagine della stories
 */
 /** 
@@ -244,7 +264,7 @@ main .container .left {
   height: -moz-max-content;
   height: max-content;
   position: sticky;
-  top: 5.4rem;
+  top: var(--sticky-top-left);
 }
 
 main .container .left .profile {
@@ -558,7 +578,7 @@ main .container .left .sidebar {
   height: -moz-max-content;
   height: max-content;
   position: sticky;
-  top: -18rem;
+  top: var(--sticky-top-right);
   bottom: 0;
 }
 
@@ -700,7 +720,12 @@ main .container .left .sidebar {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 .customize-theme {
@@ -856,7 +881,12 @@ main .container .left .sidebar {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */
@@ -932,7 +962,12 @@ img {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /* Import del mio file Main */
@@ -942,7 +977,12 @@ img {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole Main */
@@ -953,7 +993,7 @@ main {
 
 main .container {
   display: grid;
-  grid-template-columns: 18vw auto 20vw;
+  grid-template-columns: 15vw auto 20vw;
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem;
@@ -977,7 +1017,7 @@ main .container,
   position: relative;
 }
 
-/** Mixis per l'immagine della story
+/** Mixin per l'immagine della story
 * $image => Url immagine della stories
 */
 /** 
@@ -992,7 +1032,7 @@ main .container .left {
   height: -moz-max-content;
   height: max-content;
   position: sticky;
-  top: 5.4rem;
+  top: var(--sticky-top-left);
 }
 
 main .container .left .profile {
@@ -1306,7 +1346,7 @@ main .container .left .sidebar {
   height: -moz-max-content;
   height: max-content;
   position: sticky;
-  top: -18rem;
+  top: var(--sticky-top-right);
   bottom: 0;
 }
 
@@ -1448,7 +1488,12 @@ main .container .left .sidebar {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 .customize-theme {
@@ -1602,7 +1647,12 @@ main .container .left .sidebar {
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /* Tag navbar principale */

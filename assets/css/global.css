@@ -5,7 +5,12 @@
 /* Palette Colori */
 /* Dimensioni (Width/Heigt) principali */
 /* Bordi e padding */
-/* Position Sticky Rules */
+:root {
+  /* Position Sticky Rules */
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
+}
+
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */

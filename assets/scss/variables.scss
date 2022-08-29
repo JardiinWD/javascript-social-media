@@ -29,9 +29,12 @@ $btn-padding: 0.6rem 2rem;
 $search-padding: 0.6rem 1rem;
 $card-padding: 1rem;
 
-/* Position Sticky Rules */
-$sticky-top-left: 5.4rem;
-$sticky-top-right: -18rem;
+:root {
+    /* Position Sticky Rules */
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
 
 /* Modal Width & Height */
 $modal-width: 100vw;

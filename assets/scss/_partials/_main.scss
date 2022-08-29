@@ -9,7 +9,7 @@ main {
 
 main .container {
     display: grid;
-    grid-template-columns: 18vw auto 20vw;
+    grid-template-columns: 15vw auto 20vw;
     column-gap: 2rem;
 }
 
@@ -29,7 +29,7 @@ main .container,
     position: relative;
 }
 
-/** Mixis per l'immagine della story
+/** Mixin per l'immagine della story
 * $image => Url immagine della stories
 */
 @mixin storyPictures($image) {
@@ -54,7 +54,7 @@ main .container,
 main .container .left {
     height: max-content;
     position: sticky;
-    top: $sticky-top-left;
+    top: var(--sticky-top-left);
 }
 
 main .container .left .profile {
@@ -319,7 +319,7 @@ main .container .left .sidebar {
 .main .container .right {
     height: max-content;
     position: sticky;
-    top: $sticky-top-right;
+    top: var(--sticky-top-right);
     bottom: 0;
 }
 
