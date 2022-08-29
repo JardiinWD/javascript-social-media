@@ -289,6 +289,9 @@ main .container .left .sidebar {
   border-bottom-left-radius: 1rem;
   overflow: hidden;
 }
+.left .sidebar .menu-item span {
+  height: 35px;
+}
 .left .sidebar i {
   font-size: 1.4rem;
   color: hsl(252deg, 15%, 65%);
@@ -1030,6 +1033,9 @@ main .container .left .sidebar {
 .left .sidebar .menu-item:last-child.active {
   border-bottom-left-radius: 1rem;
   overflow: hidden;
+}
+.left .sidebar .menu-item span {
+  height: 35px;
 }
 .left .sidebar i {
   font-size: 1.4rem;

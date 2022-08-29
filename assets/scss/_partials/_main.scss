@@ -90,6 +90,9 @@ main .container .left .sidebar {
     .menu-item:last-child.active {
         border-bottom-left-radius: $card-border-radius;
         overflow: hidden;
+    }
+    .menu-item span {
+        height: 35px;
     }    
     /* Icons */
     i {
