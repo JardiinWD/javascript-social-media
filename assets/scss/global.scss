@@ -16,8 +16,8 @@
 
 body {
     font-family: $font-family;
-    color: $color-dark;
-    background-color: $color-light;
+    color: var(--color-dark);
+    background-color: var(--color-light);
     overflow-x: hidden;
 }
 
@@ -53,7 +53,7 @@ img {
 
 .btn-primary {
     background: var(--color-primary);
-    color: $color-white;
+    color: var(--color-white);
 }
 /*#endregion */
 

@@ -14,7 +14,13 @@ export const fontSizes = querySelectorAll('.choose-size span')
 export var root = document.querySelector(':root'); // Seleziono l'elemento radice
 // Colore
 export const colorPalette = document.querySelectorAll('.choose-color span')
+// Colore di Background
+export const colorBackground = document.querySelectorAll('.background .choose-bg div')
+console.log(colorBackground);
+
 //#endregion 
+
+
 
 
 //#region Import
@@ -24,8 +30,11 @@ import { changeActiveItem } from './function.js'; // Rimuove classe Active su Tu
 import { searchMessage } from './function.js'; // Funzione per filtrare i messaggi
 import { openThemeModal } from './theme.js'; // Funzione per Aprire la modale della modifica tema
 import { closeThemeModal } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
-import { removeSizeSelector } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
-import { removeActiveColorSelector } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
+import { removeSizeSelector } from './theme.js'; // Funzione per Rimuovere classe attiva sul selettore della dimensione testo
+import { removeActiveColorSelector } from './theme.js'; // Funzione per Rimuovere classe attiva sul selettore del cambio colore
+import { removeActiveBackgroundSelector } from './theme.js'; // Funzione per Rimuovere classe attiva sul selettore del cambio colore tema
+import { changeBackground } from './theme.js'; // Funzione per cambio colore tema
+
 
 
 //#endregion
@@ -64,11 +73,10 @@ messageSearch.addEventListener('keyup', searchMessage)
 
 //#region Cambio Tema/Font
 
-
-
+// Apertura della modale
 theme.addEventListener('click', openThemeModal)
+// Chiusura della modale
 themeModal.addEventListener('click', closeThemeModal)
-
 
 // Dimensione font
 fontSizes.forEach(size => {
@@ -128,6 +136,26 @@ colorPalette.forEach(color => {
         }
         color.classList.add('active')
         root.style.setProperty('--primary-color-hue', primaryHue);
+    })
+})
+
+
+
+
+colorBackground.forEach(color => {
+    color.addEventListener('click', () => {
+
+        removeActiveBackgroundSelector() // Invoco la mia funzione per la classe attiva
+        color.classList.toggle('active') // La riattivo al click
+
+        if (color.classList.contains('bg-1')) {
+            window.location.reload()
+        } else if (color.classList.contains('bg-2')) {
+            changeBackground('95%', '20%', '15%')
+        } else if (color.classList.contains('bg-3')) {
+            changeBackground('95%', '10%', '0%')
+        }
+        color.classList.add('active')
     })
 })
 

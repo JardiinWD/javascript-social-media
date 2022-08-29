@@ -1,11 +1,10 @@
 //#region Import 
-import { colorPalette, theme } from './app.js';
+import { colorBackground } from './app.js';
+import { colorPalette } from './app.js';
 import { themeModal } from './app.js';
 import { fontSizes } from './app.js';
-
-
+import { root } from './app.js';
 //#endregion
-
 
 //#region Function 
 
@@ -44,5 +43,34 @@ export const removeActiveColorSelector = () => {
     })
 }
 
+/** Funzione per rimuovere classe Attiva dagli span della modale (background attivo)
+ * 
+ */
+export const removeActiveBackgroundSelector = () => {
+    colorBackground.forEach(color => {
+        color.classList.remove('active')
+    })
+}
+
+/** Funzione per sistemare il colore di background
+ * 
+ * @param {string} firstColor 
+ * @param {string} secondColor 
+ * @param {string} thirdColor 
+ */
+export function changeBackground(firstColor, secondColor, thirdColor) {
+    // Variabili del colori background (solo inizializzate)
+    let lightColorLightness;
+    let darkColorLightness;
+    let whiteColorLightness;
+    // Assegno alle variabili i miei parametri
+    darkColorLightness = firstColor
+    whiteColorLightness = secondColor
+    lightColorLightness = thirdColor
+    // Ora al
+    root.style.setProperty('--light-color-lightness', lightColorLightness);
+    root.style.setProperty('--dark-color-lightness', darkColorLightness);
+    root.style.setProperty('--white-color-lightness', whiteColorLightness);
+}
 
 //#endregion

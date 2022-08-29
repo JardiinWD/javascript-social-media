@@ -4,7 +4,7 @@
 /* Tag navbar principale */
 #site_nav {
     width: 100%;
-    background: $color-white;
+    background: var(--color-white);
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@
 
 /* Search Bar */
 #site_nav .search-bar {
-    background: $color-light;
+    background: var(--color-light);
     border-radius: $border-radius;
     padding: $search-padding;
 }
@@ -36,7 +36,7 @@
     width: 30vw;
     margin-left: 1rem;
     font-size: 0.9rem;
-    color: $color-dark;
+    color: var(--color-dark);
 }
 
 #site_nav .search-bar input[type="search"]::placeholder {

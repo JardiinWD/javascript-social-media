@@ -16,7 +16,7 @@
     font-size: 0.9rem;
     display: none;
     .card {
-        background: $color-white;
+        background: var(--color-white);
         padding: 3rem;
         border-radius: $card-border-radius;
         width: 50%;
@@ -39,7 +39,7 @@
         margin-top: 5rem;
     }
     .font-size > div {
-        background: $color-light;
+        background: var(--color-light);
         padding: $search-padding;
         border-radius: $card-border-radius;
     }
@@ -67,7 +67,7 @@
 
     }
     .choose-color {
-        background: $color-light;
+        background: var(--color-light);
         padding: $search-padding;
         border-radius: $card-border-radius;
     }
@@ -97,7 +97,7 @@
         @include themeColors($fifth-theme)
     }
     .choose-color span.active {
-        border: 5px solid $color-white;
+        border: 5px solid var(--color-white);
     }
     /*#endregion */
 
@@ -122,12 +122,12 @@
         border: 2px solid var(--color-primary);
     }
     .choose-bg .bg-1 {
-        background: $color-white;
+        background: var(--color-white);
         color: $color-black;
     }
     .choose-bg .bg-2 {
-        background: $color-dark;
-        color: $color-white;
+        background: var(--color-dark);
+        color: var(--color-white);
     }   
     .choose-bg .bg-3 {
         background: hsl(252,30%,10%);

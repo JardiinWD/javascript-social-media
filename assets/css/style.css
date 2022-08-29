@@ -19,6 +19,8 @@
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -43,7 +45,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: hsl(252deg, 30%, 17%);
-  background-color: hsl(252deg, 30%, 95%);
+  background-color: var(--color-light);
   overflow-x: hidden;
 }
 
@@ -102,6 +104,8 @@ img {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -119,6 +123,8 @@ img {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -156,7 +162,7 @@ img {
 
 /* Search Bar */
 #site_nav .search-bar {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   border-radius: 2rem;
   padding: 0.6rem 1rem;
 }
@@ -167,7 +173,7 @@ img {
   width: 30vw;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
 }
 
 #site_nav .search-bar input[type=search]::-webkit-input-placeholder {
@@ -218,6 +224,8 @@ img {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -307,7 +315,7 @@ main .container .left .sidebar {
   transition: all 300ms ease;
 }
 .left .sidebar .menu-item:hover {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
 }
 .left .sidebar .menu-item:first-child.active {
   border-top-left-radius: 1rem;
@@ -343,7 +351,7 @@ main .container .left .sidebar {
   font-size: 1rem;
 }
 .left .sidebar .active {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
 }
 .left .sidebar .active i,
 .left .sidebar .active h3 {
@@ -511,7 +519,7 @@ main .container .left .sidebar {
   text-align: left;
   padding-left: 1rem;
   background: transparent;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
   margin-right: 1rem;
 }
 
@@ -620,7 +628,7 @@ main .container .left .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   border-radius: 2rem;
   padding: 0.6rem 1rem;
   margin-bottom: 1rem;
@@ -630,7 +638,7 @@ main .container .left .sidebar {
   width: 30vw;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
 }
 .right .messages .categories {
   display: -webkit-box;
@@ -644,12 +652,12 @@ main .container .left .sidebar {
 .right .messages .categories h6 {
   width: 100%;
   text-align: center;
-  border-bottom: 4px solid hsl(252deg, 30%, 95%);
+  border-bottom: 4px solid var(--color-light);
   padding-bottom: 0.5rem;
   font-size: 0.85rem;
 }
 .right .messages .categories .active {
-  border-color: hsl(252deg, 30%, 17%);
+  border-color: var(--color-dark);
 }
 .right .messages .message {
   display: -webkit-box;
@@ -731,6 +739,8 @@ main .container .left .sidebar {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -787,7 +797,7 @@ main .container .left .sidebar {
   margin-top: 5rem;
 }
 .customize-theme .font-size > div {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   padding: 0.6rem 1rem;
   border-radius: 1rem;
 }
@@ -811,7 +821,7 @@ main .container .left .sidebar {
   margin-top: 2rem;
 }
 .customize-theme .choose-color {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   padding: 0.6rem 1rem;
   border-radius: 1rem;
 }
@@ -867,7 +877,7 @@ main .container .left .sidebar {
   color: hsl(252deg, 30%, 10%);
 }
 .customize-theme .choose-bg .bg-2 {
-  background: hsl(252deg, 30%, 17%);
+  background: var(--color-dark);
   color: hsl(252deg, 30%, 100%);
 }
 .customize-theme .choose-bg .bg-3 {
@@ -894,6 +904,8 @@ main .container .left .sidebar {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -918,7 +930,7 @@ main .container .left .sidebar {
 body {
   font-family: "Poppins", sans-serif;
   color: hsl(252deg, 30%, 17%);
-  background-color: hsl(252deg, 30%, 95%);
+  background-color: var(--color-light);
   overflow-x: hidden;
 }
 
@@ -977,6 +989,8 @@ img {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -994,6 +1008,8 @@ img {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -1083,7 +1099,7 @@ main .container .left .sidebar {
   transition: all 300ms ease;
 }
 .left .sidebar .menu-item:hover {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
 }
 .left .sidebar .menu-item:first-child.active {
   border-top-left-radius: 1rem;
@@ -1119,7 +1135,7 @@ main .container .left .sidebar {
   font-size: 1rem;
 }
 .left .sidebar .active {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
 }
 .left .sidebar .active i,
 .left .sidebar .active h3 {
@@ -1287,7 +1303,7 @@ main .container .left .sidebar {
   text-align: left;
   padding-left: 1rem;
   background: transparent;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
   margin-right: 1rem;
 }
 
@@ -1396,7 +1412,7 @@ main .container .left .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   border-radius: 2rem;
   padding: 0.6rem 1rem;
   margin-bottom: 1rem;
@@ -1406,7 +1422,7 @@ main .container .left .sidebar {
   width: 30vw;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
 }
 .right .messages .categories {
   display: -webkit-box;
@@ -1420,12 +1436,12 @@ main .container .left .sidebar {
 .right .messages .categories h6 {
   width: 100%;
   text-align: center;
-  border-bottom: 4px solid hsl(252deg, 30%, 95%);
+  border-bottom: 4px solid var(--color-light);
   padding-bottom: 0.5rem;
   font-size: 0.85rem;
 }
 .right .messages .categories .active {
-  border-color: hsl(252deg, 30%, 17%);
+  border-color: var(--color-dark);
 }
 .right .messages .message {
   display: -webkit-box;
@@ -1507,6 +1523,8 @@ main .container .left .sidebar {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -1563,7 +1581,7 @@ main .container .left .sidebar {
   margin-top: 5rem;
 }
 .customize-theme .font-size > div {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   padding: 0.6rem 1rem;
   border-radius: 1rem;
 }
@@ -1587,7 +1605,7 @@ main .container .left .sidebar {
   margin-top: 2rem;
 }
 .customize-theme .choose-color {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   padding: 0.6rem 1rem;
   border-radius: 1rem;
 }
@@ -1643,7 +1661,7 @@ main .container .left .sidebar {
   color: hsl(252deg, 30%, 10%);
 }
 .customize-theme .choose-bg .bg-2 {
-  background: hsl(252deg, 30%, 17%);
+  background: var(--color-dark);
   color: hsl(252deg, 30%, 100%);
 }
 .customize-theme .choose-bg .bg-3 {
@@ -1668,6 +1686,8 @@ main .container .left .sidebar {
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-dark: hsl(252, 30%, 17%);
 }
 
 /* Palette Colori */
@@ -1705,7 +1725,7 @@ main .container .left .sidebar {
 
 /* Search Bar */
 #site_nav .search-bar {
-  background: hsl(252deg, 30%, 95%);
+  background: var(--color-light);
   border-radius: 2rem;
   padding: 0.6rem 1rem;
 }
@@ -1716,7 +1736,7 @@ main .container .left .sidebar {
   width: 30vw;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
 }
 
 #site_nav .search-bar input[type=search]::-webkit-input-placeholder {
