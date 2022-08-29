@@ -1,6 +1,9 @@
 //#region Import 
-import { theme } from './app.js';
+import { colorPalette, theme } from './app.js';
 import { themeModal } from './app.js';
+import { fontSizes } from './app.js';
+
+
 //#endregion
 
 
@@ -22,4 +25,24 @@ export const closeThemeModal = (e) => {
         themeModal.style.display = 'none'
     }
 }
+
+/** Funzione per rimuovere classe attiva dagli span della modale (dimensione testo)
+ * 
+ */
+export const removeSizeSelector = () => {
+    fontSizes.forEach(size => {
+        size.classList.remove('active')
+    })
+}
+
+/** Funzione  per rimuovere classe attiva dagli span della modale (colore attivo)
+ * 
+ */
+export const removeActiveColorSelector = () => {
+    colorPalette.forEach(color => {
+        color.classList.remove('active')
+    })
+}
+
+
 //#endregion

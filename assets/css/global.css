@@ -2,15 +2,17 @@
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */
@@ -65,7 +67,7 @@ img {
 }
 
 .btn-primary {
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
   color: hsl(252deg, 30%, 100%);
 }
 

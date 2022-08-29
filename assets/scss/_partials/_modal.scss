@@ -20,7 +20,7 @@
         padding: 3rem;
         border-radius: $card-border-radius;
         width: 50%;
-        box-shadow: 0 0 1rem $color-primary;
+        box-shadow: 0 0 1rem var(--color-primary);
     }
     /*#region Commons */
     .font-size > div,
@@ -57,7 +57,7 @@
         cursor: pointer;
     }
     .choose-size span.active {
-        background: $color-primary;
+        background: var(--color-primary);
     }
     /*#endregion */
     
@@ -119,7 +119,7 @@
         cursor: pointer;
     }
     .choose-bg > div.active {
-        border: 2px solid $color-primary;
+        border: 2px solid var(--color-primary);
     }
     .choose-bg .bg-1 {
         background: $color-white;

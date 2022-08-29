@@ -4,9 +4,6 @@
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -17,11 +14,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */
@@ -76,7 +78,7 @@ img {
 }
 
 .btn-primary {
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
   color: hsl(252deg, 30%, 100%);
 }
 
@@ -94,30 +96,34 @@ img {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /* Import del mio file Navbar */
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /* Tag navbar principale */
@@ -206,15 +212,17 @@ img {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole Main */
@@ -339,7 +347,7 @@ main .container .left .sidebar {
 }
 .left .sidebar .active i,
 .left .sidebar .active h3 {
-  color: hsl(252deg, 75%, 60%);
+  color: var(--color-primary);
 }
 .left .sidebar .active::before {
   content: "";
@@ -347,7 +355,7 @@ main .container .left .sidebar {
   width: 0.5rem;
   height: 100%;
   position: absolute;
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
 }
 
 .left .btn {
@@ -366,8 +374,8 @@ main .container .left .sidebar {
   background: hsl(252deg, 30%, 100%);
   border-radius: 1rem;
   padding: 1rem;
-  -webkit-box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
-          box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
+  -webkit-box-sizing: 0 0 2rem var(--color-primary);
+          box-sizing: 0 0 2rem var(--color-primary);
   z-index: 8;
   display: none;
 }
@@ -487,7 +495,7 @@ main .container .left .sidebar {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 0 auto;
-  border: 3px solid hsl(252deg, 75%, 60%);
+  border: 3px solid var(--color-primary);
 }
 
 .middle .create-post {
@@ -677,7 +685,7 @@ main .container .left .sidebar {
   right: 0;
 }
 .right .messages .messages-requests {
-  color: hsl(252deg, 75%, 60%);
+  color: var(--color-primary);
 }
 
 /*#endregion */
@@ -717,15 +725,17 @@ main .container .left .sidebar {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 .customize-theme {
@@ -756,8 +766,8 @@ main .container .left .sidebar {
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
-  -webkit-box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
-          box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
+  -webkit-box-shadow: 0 0 1rem var(--color-primary);
+          box-shadow: 0 0 1rem var(--color-primary);
 }
 .customize-theme .font-size > div,
 .customize-theme .choose-size,
@@ -795,7 +805,7 @@ main .container .left .sidebar {
   cursor: pointer;
 }
 .customize-theme .choose-size span.active {
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
 }
 .customize-theme .color {
   margin-top: 2rem;
@@ -850,7 +860,7 @@ main .container .left .sidebar {
   cursor: pointer;
 }
 .customize-theme .choose-bg > div.active {
-  border: 2px solid hsl(252deg, 75%, 60%);
+  border: 2px solid var(--color-primary);
 }
 .customize-theme .choose-bg .bg-1 {
   background: hsl(252deg, 30%, 100%);
@@ -878,15 +888,17 @@ main .container .left .sidebar {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole generali foglio di stile */
@@ -941,7 +953,7 @@ img {
 }
 
 .btn-primary {
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
   color: hsl(252deg, 30%, 100%);
 }
 
@@ -959,30 +971,34 @@ img {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /* Import del mio file Main */
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /*#region Regole Main */
@@ -1107,7 +1123,7 @@ main .container .left .sidebar {
 }
 .left .sidebar .active i,
 .left .sidebar .active h3 {
-  color: hsl(252deg, 75%, 60%);
+  color: var(--color-primary);
 }
 .left .sidebar .active::before {
   content: "";
@@ -1115,7 +1131,7 @@ main .container .left .sidebar {
   width: 0.5rem;
   height: 100%;
   position: absolute;
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
 }
 
 .left .btn {
@@ -1134,8 +1150,8 @@ main .container .left .sidebar {
   background: hsl(252deg, 30%, 100%);
   border-radius: 1rem;
   padding: 1rem;
-  -webkit-box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
-          box-sizing: 0 0 2rem hsl(252deg, 75%, 60%);
+  -webkit-box-sizing: 0 0 2rem var(--color-primary);
+          box-sizing: 0 0 2rem var(--color-primary);
   z-index: 8;
   display: none;
 }
@@ -1255,7 +1271,7 @@ main .container .left .sidebar {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 0 auto;
-  border: 3px solid hsl(252deg, 75%, 60%);
+  border: 3px solid var(--color-primary);
 }
 
 .middle .create-post {
@@ -1445,7 +1461,7 @@ main .container .left .sidebar {
   right: 0;
 }
 .right .messages .messages-requests {
-  color: hsl(252deg, 75%, 60%);
+  color: var(--color-primary);
 }
 
 /*#endregion */
@@ -1485,15 +1501,17 @@ main .container .left .sidebar {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 .customize-theme {
@@ -1524,8 +1542,8 @@ main .container .left .sidebar {
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
-  -webkit-box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
-          box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
+  -webkit-box-shadow: 0 0 1rem var(--color-primary);
+          box-shadow: 0 0 1rem var(--color-primary);
 }
 .customize-theme .font-size > div,
 .customize-theme .choose-size,
@@ -1563,7 +1581,7 @@ main .container .left .sidebar {
   cursor: pointer;
 }
 .customize-theme .choose-size span.active {
-  background: hsl(252deg, 75%, 60%);
+  background: var(--color-primary);
 }
 .customize-theme .color {
   margin-top: 2rem;
@@ -1618,7 +1636,7 @@ main .container .left .sidebar {
   cursor: pointer;
 }
 .customize-theme .choose-bg > div.active {
-  border: 2px solid hsl(252deg, 75%, 60%);
+  border: 2px solid var(--color-primary);
 }
 .customize-theme .choose-bg .bg-1 {
   background: hsl(252deg, 30%, 100%);
@@ -1644,15 +1662,17 @@ main .container .left .sidebar {
 /* Import del mio file variabili */
 /* Import font da Google */
 /* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
 :root {
+  --primary-color-hue: 252;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
 }
 
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
 /* Modal Width & Height */
 /* Themes */
 /* Tag navbar principale */

@@ -52,7 +52,7 @@ img {
 }
 
 .btn-primary {
-    background: $color-primary;
+    background: var(--color-primary);
     color: $color-white;
 }
 /*#endregion */

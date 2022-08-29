@@ -10,8 +10,10 @@ export const messageSearch = document.querySelector('#message-search')
 export const theme = querySelector('#theme') // Link della sideBar
 export const themeModal = querySelector('.customize-theme')
 //Font
-export const fontSize = querySelectorAll('.choose-size span')
+export const fontSizes = querySelectorAll('.choose-size span')
 export var root = document.querySelector(':root'); // Seleziono l'elemento radice
+// Colore
+export const colorPalette = document.querySelectorAll('.choose-color span')
 //#endregion 
 
 
@@ -21,7 +23,9 @@ import { querySelector } from './function.js'; // Funzione per il querySelector
 import { changeActiveItem } from './function.js'; // Rimuove classe Active su Tutte
 import { searchMessage } from './function.js'; // Funzione per filtrare i messaggi
 import { openThemeModal } from './theme.js'; // Funzione per Aprire la modale della modifica tema
-import { closeThemeModal } from './theme.js'; // Funzione per Aprire la modale della modifica tema
+import { closeThemeModal } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
+import { removeSizeSelector } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
+import { removeActiveColorSelector } from './theme.js'; // Funzione per Chiudere la modale della modifica tema
 
 
 //#endregion
@@ -60,12 +64,19 @@ messageSearch.addEventListener('keyup', searchMessage)
 
 //#region Cambio Tema/Font
 
+
+
 theme.addEventListener('click', openThemeModal)
 themeModal.addEventListener('click', closeThemeModal)
-fontSize.forEach(size => {
-    let fontSize;
 
+
+// Dimensione font
+fontSizes.forEach(size => {
     size.addEventListener('click', () => {
+        removeSizeSelector() // Funzione per rimuovere la classe active
+        let fontSize;
+        size.classList.toggle('active') // Riattivazione della classe active
+
         if (size.classList.contains('font-size-1')) {
             fontSize = '10px'
             root.style.setProperty('----sticky-top-left', '5.4rem')
@@ -88,12 +99,39 @@ fontSize.forEach(size => {
             root.style.setProperty('----sticky-top-right', '-35rem')
         }
         // Cambio del font
-        document.querySelector('html').style.fontSize = fontSize
+        document.querySelector('html').style.fontSize = fontSize;
     })
-
-
-
 })
+
+// Cambio colore primario
+colorPalette.forEach(color => {
+    // PS => Color è il singolo span
+    color.addEventListener('click', () => {
+        removeActiveColorSelector() // Invoco la mia funzione per la classe attiva
+        color.classList.toggle('active') // La riattivo al click
+        let primary;
+        let primaryHue; // Dichiaro la mia variabile inizialmente vuota
+        if (color.classList.contains('color-1')) {
+            primaryHue = 252;
+        }
+        else if (color.classList.contains('color-2')) {
+            primaryHue = 52;
+        }
+        else if (color.classList.contains('color-3')) {
+            primaryHue = 352;
+        }
+        else if (color.classList.contains('color-4')) {
+            primaryHue = 152;
+        }
+        else if (color.classList.contains('color-5')) {
+            primaryHue = 202;
+        }
+        color.classList.add('active')
+        root.style.setProperty('--primary-color-hue', primaryHue);
+    })
+})
+
+
 
 
 //#endregion

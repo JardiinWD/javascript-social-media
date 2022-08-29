@@ -123,7 +123,7 @@ main .container .left .sidebar {
     }
     .active i,
     .active h3 {
-        color: $color-primary;
+        color: var(--color-primary);
     }
     .active::before {
         content: "";
@@ -131,7 +131,7 @@ main .container .left .sidebar {
         width: 0.5rem;
         height: 100%;
         position: absolute;
-        background: $color-primary;
+        background: var(--color-primary);
     }
 }
 
@@ -151,7 +151,7 @@ main .container .left .sidebar {
     background: $color-white;
     border-radius: $card-border-radius;
     padding: $card-padding;
-    box-sizing: 0 0 2rem $color-primary;
+    box-sizing: 0 0 2rem var(--color-primary);
     z-index: 8;
     display: none;
 }
@@ -234,7 +234,7 @@ main .container .left .sidebar {
         height: 2rem;
         align-self: flex-start;
         margin: 0 auto;
-        border: 3px solid $color-primary;
+        border: 3px solid var(--color-primary);
     }
 }
 
@@ -401,7 +401,7 @@ main .container .left .sidebar {
         right: 0;
     }
     .messages-requests {
-        color: $color-primary;
+        color: var(--color-primary);
     }
 }
 /*#endregion */
