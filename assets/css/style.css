@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* Import del mio file Navbar */ /* Import del mio file variabili */
+/* Import del mio file Globale */
+/* Import del mio file variabili */
 /* Import font da Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* Font Family & Weight */
@@ -8,11 +9,98 @@
 /* Bordi e padding */
 /* Position Sticky Rules */
 /* Modal Width & Height */
+/* Themes */
+/*#region Regole generali foglio di stile */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: hsl(252deg, 30%, 17%);
+  background-color: hsl(252deg, 30%, 95%);
+  overflow-x: hidden;
+}
+
+/* Regola fissa per il Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Regola Fissa per le immagini */
+img {
+  display: block;
+  width: 100%;
+}
+
+/*#endregion */
+/*#region Regole generali per i buttons */
+/* Regola fissa per i button */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: hsl(252deg, 75%, 60%);
+  color: hsl(252deg, 30%, 100%);
+}
+
+/*#endregion */
+/*#region Regole generali per i testi */
+.text-bold {
+  font-weight: 500;
+}
+
+.text-muted {
+  color: hsl(252deg, 15%, 65%);
+}
+
+/*#endregion */
+/* Import del mio file variabili */
+/* Import font da Google */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/* Position Sticky Rules */
+/* Modal Width & Height */
+/* Themes */
+/* Import del mio file Navbar */
+/* Import del mio file variabili */
+/* Import font da Google */
+/* Font Family & Weight */
+/* Palette Colori */
+/* Dimensioni (Width/Heigt) principali */
+/* Bordi e padding */
+/* Position Sticky Rules */
+/* Modal Width & Height */
+/* Themes */
 /* Tag navbar principale */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 #site_nav {
   width: 100%;
   background: hsl(252deg, 30%, 100%);
@@ -103,6 +191,7 @@
 /* Bordi e padding */
 /* Position Sticky Rules */
 /* Modal Width & Height */
+/* Themes */
 /*#region Regole Main */
 main {
   position: relative;
@@ -605,6 +694,7 @@ main .container .left .sidebar {
 /* Bordi e padding */
 /* Position Sticky Rules */
 /* Modal Width & Height */
+/* Themes */
 .customize-theme {
   background: rgba(255, 255, 255, 0.5);
   width: 100vw;
@@ -615,98 +705,133 @@ main .container .left .sidebar {
   z-index: 100;
   text-align: center;
   display: grid;
-  place-content: center;
+  place-items: center;
   font-size: 0.9rem;
+  /*#region Commons */
+  /*#endregion */
+  /*#region Font Size */
+  /*#endregion */
+  /*#region Color */
+  /* Mixin per il colore di background */
+  /*#endregion */
+  /*#region Background */
+  /*#endregion */
 }
-
 .customize-theme .card {
   background: hsl(252deg, 30%, 100%);
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
 }
-
-/* Import del mio file Globale */
-/* Import del mio file variabili */
-/* Import font da Google */
-/* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
-/* Position Sticky Rules */
-/* Modal Width & Height */
-/*#region Regole generali foglio di stile */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  border: none;
+.customize-theme .font-size > div,
+.customize-theme .choose-size,
+.customize-theme .choose-color,
+.customize-theme .choose-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-  color: hsl(252deg, 30%, 17%);
-  background-color: hsl(252deg, 30%, 95%);
-  overflow-x: hidden;
+.customize-theme .font-size {
+  margin-top: 5rem;
 }
-
-/* Regola fissa per il Container */
-.container {
-  width: 80%;
-  margin: 0 auto;
+.customize-theme .font-size > div {
+  background: hsl(252deg, 30%, 95%);
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
 }
-
-/* Regola Fissa per le immagini */
-img {
-  display: block;
+.customize-theme .choose-size {
+  background: hsl(252deg, 100%, 90%);
+  height: 0.3rem;
   width: 100%;
+  margin: 0 1rem;
 }
-
-/*#endregion */
-/*#region Regole generali per i buttons */
-/* Regola fissa per i button */
-.btn {
-  display: inline-block;
-  padding: 0.6rem 2rem;
-  font-weight: 500;
-  border-radius: 2rem;
+.customize-theme .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: hsl(252deg, 100%, 90%);
+  border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  font-size: 0.9rem;
 }
-
-.btn:hover {
-  opacity: 0.8;
-}
-
-.btn-primary {
+.customize-theme .choose-size span.active {
   background: hsl(252deg, 75%, 60%);
+}
+.customize-theme .color {
+  margin-top: 2rem;
+}
+.customize-theme .choose-color {
+  background: hsl(252deg, 30%, 95%);
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+}
+.customize-theme .choose-color span {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: hsl(0deg, 95%, 65%);
+}
+.customize-theme .choose-color span:nth-child(1) {
+  background: hsl(252deg, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(2) {
+  background: hsl(52deg, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(3) {
+  background: hsl(352deg, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(4) {
+  background: hsl(152deg, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(5) {
+  background: hsl(202deg, 75%, 60%);
+}
+.customize-theme .choose-color span.active {
+  border: 5px solid hsl(252deg, 30%, 100%);
+}
+.customize-theme .background {
+  margin-top: 2rem;
+}
+.customize-theme .choose-bg {
+  gap: 1.5rem;
+}
+.customize-theme .choose-bg > div {
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.customize-theme .choose-bg > div.active {
+  border: 2px solid hsl(252deg, 75%, 60%);
+}
+.customize-theme .choose-bg .bg-1 {
+  background: hsl(252deg, 30%, 100%);
+  color: hsl(252deg, 30%, 10%);
+}
+.customize-theme .choose-bg .bg-2 {
+  background: hsl(252deg, 30%, 17%);
   color: hsl(252deg, 30%, 100%);
 }
-
-/*#endregion */
-/*#region Regole generali per i testi */
-.text-bold {
-  font-weight: 500;
+.customize-theme .choose-bg .bg-3 {
+  background: hsl(252deg, 30%, 10%);
+  color: white;
 }
-
-.text-muted {
-  color: hsl(252deg, 15%, 65%);
+.customize-theme .choose-bg > div span {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid hsl(252deg, 15%, 65%);
+  border-radius: 50%;
+  margin-right: 1rem;
 }
-
-/*#endregion */
-/* Import del mio file variabili */
-/* Import font da Google */
-/* Font Family & Weight */
-/* Palette Colori */
-/* Dimensioni (Width/Heigt) principali */
-/* Bordi e padding */
-/* Position Sticky Rules */
-/* Modal Width & Height */

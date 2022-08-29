@@ -1,6 +1,7 @@
 /* Import del mio file variabili */
 @import '../variables.scss';
 
+
 .customize-theme {
     background: rgba(255,255,255,0.5);
     width: $modal-width;
@@ -11,13 +12,134 @@
     z-index: 100;
     text-align: center;
     display: grid;
-    place-content: center;
+    place-items: center;
     font-size: 0.9rem;
+    .card {
+        background: $color-white;
+        padding: 3rem;
+        border-radius: $card-border-radius;
+        width: 50%;
+    }
+    /*#region Commons */
+    .font-size > div,
+    .choose-size,
+    .choose-color,
+    .choose-bg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*#endregion */
+
+    /*#region Font Size */
+    .font-size {
+        margin-top: 5rem;
+    }
+    .font-size > div {
+        background: $color-light;
+        padding: $search-padding;
+        border-radius: $card-border-radius;
+    }
+    .choose-size {
+        background: $color-secondary;
+        height: 0.3rem;
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .choose-size span {
+        width: 1rem;
+        height: 1rem;
+        background: $color-secondary;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .choose-size span.active {
+        background: $color-primary;
+    }
+    /*#endregion */
+    
+    /*#region Color */
+    .color {
+        margin-top: 2rem;
+
+    }
+    .choose-color {
+        background: $color-light;
+        padding: $search-padding;
+        border-radius: $card-border-radius;
+    }
+    .choose-color span {
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        background: $color-danger;
+    }
+    /* Mixin per il colore di background */
+    @mixin themeColors($color) {
+        background: $color;
+    }
+    .choose-color span:nth-child(1){
+        @include themeColors($first-theme)
+    }
+    .choose-color span:nth-child(2){
+        @include themeColors($second-theme)
+    }
+    .choose-color span:nth-child(3){
+        @include themeColors($third-theme)
+    }
+    .choose-color span:nth-child(4){
+        @include themeColors($fourth-theme)
+    }
+    .choose-color span:nth-child(5){
+        @include themeColors($fifth-theme)
+    }
+    .choose-color span.active {
+        border: 5px solid $color-white;
+    }
+    /*#endregion */
+
+    /*#region Background */
+    .background {
+        margin-top: 2rem;
+    }
+    .choose-bg {
+        gap: 1.5rem;
+    }
+    .choose-bg > div {
+        padding: $card-padding;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.4rem;
+        cursor: pointer;
+    }
+    .choose-bg > div.active {
+        border: 2px solid $color-primary;
+    }
+    .choose-bg .bg-1 {
+        background: $color-white;
+        color: $color-black;
+    }
+    .choose-bg .bg-2 {
+        background: $color-dark;
+        color: $color-white;
+    }   
+    .choose-bg .bg-3 {
+        background: hsl(252,30%,10%);
+        color: white;
+    }
+    .choose-bg > div span {
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid $color-gray;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+
+    /*#endregion */
 }
 
-.customize-theme .card {
-    background: $color-white;
-    padding: 3rem;
-    border-radius: $card-border-radius;
-    width: 50%;
-}
+
