@@ -709,12 +709,13 @@ main .container .left .sidebar {
   height: 100vh;
   position: fixed;
   top: 0;
-  display: none;
   left: 0;
   z-index: 100;
   text-align: center;
+  display: grid;
   place-items: center;
   font-size: 0.9rem;
+  display: none;
   /*#region Commons */
   /*#endregion */
   /*#region Font Size */
@@ -730,6 +731,8 @@ main .container .left .sidebar {
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
+  -webkit-box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
+          box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
 }
 .customize-theme .font-size > div,
 .customize-theme .choose-size,
@@ -1454,12 +1457,13 @@ main .container .left .sidebar {
   height: 100vh;
   position: fixed;
   top: 0;
-  display: none;
   left: 0;
   z-index: 100;
   text-align: center;
+  display: grid;
   place-items: center;
   font-size: 0.9rem;
+  display: none;
   /*#region Commons */
   /*#endregion */
   /*#region Font Size */
@@ -1475,6 +1479,8 @@ main .container .left .sidebar {
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
+  -webkit-box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
+          box-shadow: 0 0 1rem hsl(252deg, 75%, 60%);
 }
 .customize-theme .font-size > div,
 .customize-theme .choose-size,
@@ -1704,6 +1710,9 @@ main .container .left .sidebar {
   main .container .left .btn {
     display: none;
   }
+  .customize-theme .card {
+    width: 80vw;
+  }
 }
 /*#endregion */
 /*#region Media Queries per Piccoli Tablet / e Smartphone  */
@@ -1737,6 +1746,9 @@ main .container .left .sidebar {
   }
   main .container .right {
     display: none;
+  }
+  .customize-theme .card {
+    width: 92vw;
   }
 }
 /*#endregion */

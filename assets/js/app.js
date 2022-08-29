@@ -1,17 +1,25 @@
 //#region Variabili
+//Sidebar 
 export const menuItems = querySelectorAll('.menu-item')
+//Messaggi
 export const messagesNotification = querySelector('#messages-notifications')
 export const messages = querySelector('.messages')
 export const message = messages.querySelectorAll('.message')
 export const messageSearch = document.querySelector('#message-search')
+//Tema
+export const theme = querySelector('#theme') // Link della sideBar
+export const themeModal = querySelector('.customize-theme')
 //#endregion 
 
 
 //#region Import
-import { querySelectorAll } from './function.js'; // Funzione per il querySelector, valida per tutte
-import { querySelector } from './function.js'; // Rimuove classe Active su Tutte
+import { querySelectorAll } from './function.js'; // Funzione per il querySelectorAll
+import { querySelector } from './function.js'; // Funzione per il querySelector
 import { changeActiveItem } from './function.js'; // Rimuove classe Active su Tutte
-import { searchMessage } from './function.js'; // Rimuove classe Active su Tutte
+import { searchMessage } from './function.js'; // Funzione per filtrare i messaggi
+import { openThemeModal } from './theme.js'; // Funzione per Aprire la modale della modifica tema
+import { closeThemeModal } from './theme.js'; // Funzione per Aprire la modale della modifica tema
+
 
 //#endregion
 
@@ -42,8 +50,13 @@ messagesNotification.addEventListener('click', () => {
         messages.style.boxShadow = 'none'
     }, 2000)
 })
-
 // Ricerca Chat
 messageSearch.addEventListener('keyup', searchMessage)
 
+//#endregion
+
+//#region Cambio Tema/Font
+
+theme.addEventListener('click', openThemeModal)
+themeModal.addEventListener('click', closeThemeModal)
 //#endregion

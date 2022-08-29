@@ -8,18 +8,19 @@
     height: $modal-heigth;
     position: fixed;
     top: 0;
-    display: none;
     left: 0;
     z-index: 100;
     text-align: center;
-    // display: grid;
+    display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;
     .card {
         background: $color-white;
         padding: 3rem;
         border-radius: $card-border-radius;
         width: 50%;
+        box-shadow: 0 0 1rem $color-primary;
     }
     /*#region Commons */
     .font-size > div,
