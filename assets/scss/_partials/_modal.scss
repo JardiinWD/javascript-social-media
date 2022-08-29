@@ -8,10 +8,11 @@
     height: $modal-heigth;
     position: fixed;
     top: 0;
+    display: none;
     left: 0;
     z-index: 100;
     text-align: center;
-    display: grid;
+    // display: grid;
     place-items: center;
     font-size: 0.9rem;
     .card {
