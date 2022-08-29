@@ -1723,7 +1723,7 @@ main .container .left .sidebar {
   }
   main .container .left .notifications-popup {
     position: absolute;
-    left: -20rem;
+    left: -21rem;
     width: 20rem;
   }
   main .container .left .notifications-popup::before {
