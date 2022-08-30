@@ -1,0 +1,72 @@
+[
+    {
+        "user_img" : "./assets/img/profile-13.jpg",
+        "username" : "Lana Rose",
+        "user_location" : "Dubai, 15 Minuti fa",
+        "user_feed_img" : "./assets/img/feed-1.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Lana Rose"
+    },
+    {
+        "user_img" : "./assets/img/profile-14.jpg",
+        "username" : "Benjamin Dwayne",
+        "user_location" : "Miami, 2 ore fa",
+        "user_feed_img" : "./assets/img/feed-3.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Benjamin Dwayne"
+    },
+    {
+        "user_img" : "./assets/img/profile-15.jpg",
+        "username" : "Malik Berry",
+        "user_location" : "Ghana, 35 Minuti fa",
+        "user_feed_img" : "./assets/img/feed-3.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Malik Berry"
+    },
+    {
+        "user_img" : "./assets/img/profile-16.jpg",
+        "username" : "Joe Biden",
+        "user_location" : "Washington, 55 Minuti fa",
+        "user_feed_img" : "./assets/img/feed-4.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Joe Biden"
+    },
+    {
+        "user_img" : "./assets/img/profile-10.jpg",
+        "username" : "Donald Trump",
+        "user_location" : "Trump Tower, 5 Minuti fa",
+        "user_feed_img" : "./assets/img/feed-5.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Donald Trump"
+    },
+    {
+        "user_img" : "./assets/img/profile-11.jpg",
+        "username" : "Nancy Pelosi",
+        "user_location" : "Capitol Hill, 3 ore fa",
+        "user_feed_img" : "./assets/img/feed-6.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Nancy Pelosi"
+    },
+    {
+        "user_img" : "./assets/img/profile-19.jpg",
+        "username" : "Barack Obama",
+        "user_location" : "Haiti, 25 Minuti fa",
+        "user_feed_img" : "./assets/img/feed-7.jpg",
+        "liked_users" : ["./assets/img/profile-10.jpg", "./assets/img/profile-4.jpg", "./assets/img/profile-15.jpg"],
+        "liked_by": "Ernest Achivier",
+        "liked_others": "2,323 others",
+        "user_comments": "Barack Obama"
+    }    
+]

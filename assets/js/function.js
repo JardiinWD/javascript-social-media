@@ -48,3 +48,106 @@ export const searchMessage = () => {
         }
     })
 }
+
+/** Funzione da invocare ogni volta che devo richiamare un Json
+ * This function must be invoked every time I try to manipulate the dom
+ * @param {string} url This is my JSON Path
+ */
+export async function getData(url) {
+    /* I save my JSON link on my Response */
+    const response = await fetch(url);
+    let data = '';
+    /* Started API Call to my JSON file */
+    try {
+        data = await response.json();
+        console.log(data); // I look into the console
+        return data // i need to return my data
+    }
+    // Take the error if needed
+    catch (error) {
+        console.error(error) // I look into the console
+    }
+    return response; // I need to return my response
+}
+
+export async function feedsDomManipulation() {
+    const feedsPage = querySelector('.feeds') // Mio wrapper principale
+
+    // Invoke my function
+    let data = await getData('./assets/json/posts.json')
+    // console.log(data[0].liked_users[0]); // Da usare nel forEach
+    data.forEach(element => {
+        let singleFeed =
+            `
+            <div class="feed">
+                <!-- /.head -->
+                <div class="head">
+                    <!-- /.user -->
+                    <div class="user">
+                        <!-- /.profile-picture -->
+                        <div class="profile-picture">
+                            <img src="${element.user_img}">
+                        </div>
+                        <!-- /.ingo -->
+                        <div class="ingo">
+                            <h3>${element.username}</h3>
+                            <small>${element.user_location}</small>
+                        </div>
+                    </div>
+                    <!-- /.edit -->
+                    <span class="edit">
+                        <!-- /.uil uil-ellipsis-h -->
+                        <i class="uil uil-ellipsis-h"></i>
+                    </span>
+                </div>
+                <!-- /.photo -->
+                <div class="photo">
+                    <img src="${element.user_feed_img}">
+                </div>
+                <!-- /.action-button -->
+                <div class="action-buttons">
+                    <!-- /.interaction-buttons -->
+                    <div class="interaction-buttons">
+                        <!-- /.uil uil-heart -->
+                        <span><i class="uil uil-heart"></i></span>
+                        <!-- /.uil uil-comment-dots -->
+                        <span><i class="uil uil-comment-dots"></i></span>  
+                        <!-- /.uil uil-share-alt -->
+                        <span><i class="uil uil-share-alt"></i></span>  
+                    </div>
+                    <!-- /.bookmark -->
+                    <div class="bookmark">
+                        <!-- Per farla solid al click : <i class="uis uis-bookmark"></i> -->
+                        <!-- /.uil uil-bookmark-full -->
+                        <span><i class="uil uil-bookmark-full"></i></span>
+                    </div>
+                </div>
+                <!-- /.liked-by -->
+                <div class="liked-by">
+                    <!-- Immagine della gente alla quale piace -->
+                    <span><img src="${element.liked_users[0]}"></span>
+                    <span><img src="${element.liked_users[1]}"></span>
+                    <span><img src="${element.liked_users[2]}"></span>
+                    <p>Liked by <b>${element.liked_by}</b> and <b>${element.liked_others}</b></p>
+                </div>
+                <!-- /.caption -->
+                <div class="caption">
+                    <p>
+                        <b>${element.username}</b> Lorem ipsum, dolor sit amet consectetur. 
+                        <!-- /.harsh-tag -->
+                        <span class="harsh-tag">#adipisicing.</span>
+                    </p>
+                </div>
+                <!-- /.text-muted -->
+                <div class="text-muted comments">
+                    View all 277 comments
+                </div>
+            </div>
+            `
+        return feedsPage.insertAdjacentHTML('beforeend', singleFeed)
+    })
+}
+
+feedsDomManipulation()
+
+

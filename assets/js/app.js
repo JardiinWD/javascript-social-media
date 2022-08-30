@@ -1,4 +1,5 @@
 //#region Variabili
+
 //Sidebar 
 export const menuItems = querySelectorAll('.menu-item')
 //Messaggi
@@ -20,9 +21,6 @@ console.log(colorBackground);
 
 //#endregion 
 
-
-
-
 //#region Import
 import { querySelectorAll } from './function.js'; // Funzione per il querySelectorAll
 import { querySelector } from './function.js'; // Funzione per il querySelector
@@ -34,6 +32,10 @@ import { removeSizeSelector } from './theme.js'; // Funzione per Rimuovere class
 import { removeActiveColorSelector } from './theme.js'; // Funzione per Rimuovere classe attiva sul selettore del cambio colore
 import { removeActiveBackgroundSelector } from './theme.js'; // Funzione per Rimuovere classe attiva sul selettore del cambio colore tema
 import { changeBackground } from './theme.js'; // Funzione per cambio colore tema
+
+/////////////////////////////
+// Import delle mie function/variabili per manipolazione dom
+import { feedsDomManipulation } from './function.js'; // Import della funzione per manipolazione Feeds
 
 
 
@@ -139,15 +141,11 @@ colorPalette.forEach(color => {
     })
 })
 
-
-
-
+// Cambio colore background
 colorBackground.forEach(color => {
     color.addEventListener('click', () => {
-
         removeActiveBackgroundSelector() // Invoco la mia funzione per la classe attiva
         color.classList.toggle('active') // La riattivo al click
-
         if (color.classList.contains('bg-1')) {
             window.location.reload()
         } else if (color.classList.contains('bg-2')) {
