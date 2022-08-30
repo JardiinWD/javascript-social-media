@@ -19,6 +19,8 @@ export const colorPalette = document.querySelectorAll('.choose-color span')
 export const colorBackground = document.querySelectorAll('.background .choose-bg div')
 // Categorie zona DX
 export const categoriesZone = querySelectorAll('.categories h6')
+// Richieste Zona DX
+const requestBox = querySelectorAll('.requestBox .request')
 
 //#endregion 
 
@@ -47,7 +49,6 @@ import { removeCategoriesSelector } from './function.js';
 feedsDomManipulation() // Manipolazione feeds
 storiesDomManipulation() // Manipolazione Stories
 //#endregion 
-
 
 //#region SideBar laterale
 menuItems.forEach(element => {
@@ -210,3 +211,14 @@ categoriesZone.forEach(category => {
         category.classList.add('active')
     })
 })
+
+// Selezione della singola richiesta di amicizia ed evento associato
+for (let i = 0; i < requestBox.length; i++) {
+    requestBox[i].addEventListener('click', () => {
+        console.log(`Sono il console log alla posizione ${i}`);
+    })
+}
+
+
+
+
