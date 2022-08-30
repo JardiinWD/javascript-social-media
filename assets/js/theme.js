@@ -64,8 +64,8 @@ export function changeBackground(firstColor, secondColor, thirdColor) {
     let darkColorLightness;
     let whiteColorLightness;
     // Assegno alle variabili i miei parametri
-    darkColorLightness = firstColor
     whiteColorLightness = secondColor
+    darkColorLightness = firstColor
     lightColorLightness = thirdColor
     // Ora al
     root.style.setProperty('--light-color-lightness', lightColorLightness);

@@ -60,8 +60,11 @@
         }
         .left .notifications-popup {
             position: absolute;
-            left: -21rem;
+            left: -23rem;
             width: 20rem;
+        }
+        .left .sidebar i {
+            margin-left: 1.45rem;
         }
         .left .notifications-popup::before {
             display: absolute;

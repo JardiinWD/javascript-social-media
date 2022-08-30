@@ -480,7 +480,7 @@ main .container .left .sidebar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: var(--color-white);
+  color: hsl(252deg, 30%, 100%);
   font-size: 0.75rem;
   width: 100%;
   background: hsl(0deg, 95%, 65%);
@@ -722,31 +722,43 @@ main .container .left .sidebar {
 /*#region Friend Requests */
 .right .friend-requests {
   margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .right .friend-requests h4 {
   color: hsl(252deg, 15%, 65%);
   margin: 1rem 0;
 }
 
-.right .request {
+.friend-requests .request {
   background: var(--color-white);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
+  padding: 0.45rem;
 }
-.right .request .info,
-.right .request .action {
+.friend-requests .request .info,
+.friend-requests .request .action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
-.right .request .info {
+.friend-requests .request .action .btn {
+  padding: 0.65rem;
+}
+.friend-requests .request .info {
   margin-bottom: 1rem;
 }
-.right .request .info .profile-picture img {
-  width: 100%;
-  height: 100%;
+.friend-requests .request .info p {
+  font-size: 0.85rem;
+}
+.friend-requests .request .info .profile-picture img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
 /*#endregion */
@@ -1286,7 +1298,7 @@ main .container .left .sidebar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: var(--color-white);
+  color: hsl(252deg, 30%, 100%);
   font-size: 0.75rem;
   width: 100%;
   background: hsl(0deg, 95%, 65%);
@@ -1528,31 +1540,43 @@ main .container .left .sidebar {
 /*#region Friend Requests */
 .right .friend-requests {
   margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .right .friend-requests h4 {
   color: hsl(252deg, 15%, 65%);
   margin: 1rem 0;
 }
 
-.right .request {
+.friend-requests .request {
   background: var(--color-white);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
+  padding: 0.45rem;
 }
-.right .request .info,
-.right .request .action {
+.friend-requests .request .info,
+.friend-requests .request .action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
-.right .request .info {
+.friend-requests .request .action .btn {
+  padding: 0.65rem;
+}
+.friend-requests .request .info {
   margin-bottom: 1rem;
 }
-.right .request .info .profile-picture img {
-  width: 100%;
-  height: 100%;
+.friend-requests .request .info p {
+  font-size: 0.85rem;
+}
+.friend-requests .request .info .profile-picture img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
 /*#endregion */
@@ -1874,8 +1898,11 @@ main .container .left .sidebar {
   }
   main .container .left .notifications-popup {
     position: absolute;
-    left: -21rem;
+    left: -23rem;
     width: 20rem;
+  }
+  main .container .left .sidebar i {
+    margin-left: 1.45rem;
   }
   main .container .left .notifications-popup::before {
     display: absolute;

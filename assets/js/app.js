@@ -178,31 +178,35 @@ categoriesZone.forEach(category => {
     category.addEventListener('click', () => {
         removeCategoriesSelector() // Funzione per disattivare classe attiva
         category.classList.toggle('active') // La riattivo al click
-
-
+        // Condizione per i messaggi
         if (category.classList.contains('primary')) {
             // Tramite for of attivo la proprietà flex a tutti
-            for (const single of message) single.style.display = 'flex'
-            generalBox.style.display = 'none'
-            requestBox.style.display = 'none'
+            setTimeout(() => {
+                for (const single of message) single.style.display = 'flex'
+                generalBox.style.display = 'none'
+                requestBox.style.display = 'none'
+            }, 100)
         }
+        // Condizione per il general
         else if (category.classList.contains('general')) {
-            // Tramite for of attivo la proprietà none a tutti
-            for (const single of message) single.style.display = 'none'
-            generalBox.style.display = 'flex'
-            requestBox.style.display = 'none'
-        }
-        else if (category.classList.contains('message-requests')) {
-            for (const single of message) single.style.display = 'none'
-            generalBox.style.display = 'none'
-            requestBox.style.display = 'flex'
-        }
-        category.classList.add('active')
+            // Messo tutto dentro un intervallo di 200ms
+            setTimeout(() => {
+                // Tramite for of attivo la proprietà none a tutti
+                for (const single of message) single.style.display = 'none'
+                generalBox.style.display = 'flex'
+                requestBox.style.display = 'none'
+            }, 100)
 
+        }
+        // Condizione per le richieste
+        else if (category.classList.contains('message-requests')) {
+            setTimeout(() => {
+                for (const single of message) single.style.display = 'none'
+                generalBox.style.display = 'none'
+                requestBox.style.display = 'flex'
+            }, 100)
+        }
+        // Aggiungo la classe Active
+        category.classList.add('active')
     })
 })
-
-
-
-
-//
