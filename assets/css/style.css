@@ -15,12 +15,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -44,7 +48,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
   background-color: var(--color-light);
   overflow-x: hidden;
 }
@@ -75,13 +79,17 @@ img {
   font-size: 0.9rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
 
 .btn-primary {
   background: var(--color-primary);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
 }
 
 /*#endregion */
@@ -100,12 +108,16 @@ img {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -119,12 +131,16 @@ img {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -135,7 +151,7 @@ img {
 /* Tag navbar principale */
 #site_nav {
   width: 100%;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 0.7rem 0;
   position: fixed;
   top: 0;
@@ -220,12 +236,16 @@ img {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -285,7 +305,7 @@ main .container .left {
 
 main .container .left .profile {
   padding: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
@@ -295,7 +315,7 @@ main .container .left .profile {
 
 main .container .left .sidebar {
   margin-top: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 2rem;
 }
 
@@ -335,7 +355,7 @@ main .container .left .sidebar {
 }
 .left .sidebar i .notification-count {
   background: hsl(0deg, 95%, 65%);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
   font-size: 0.7rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -379,7 +399,7 @@ main .container .left .sidebar {
   top: 0;
   left: 110%;
   width: 30rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   -webkit-box-sizing: 0 0 2rem var(--color-primary);
@@ -394,7 +414,7 @@ main .container .left .sidebar {
   width: 1.2rem;
   height: 1.2rem;
   display: block;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   position: absolute;
   left: -0.6rem;
   -webkit-transform: rotate(45deg);
@@ -459,7 +479,7 @@ main .container .left .sidebar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
   font-size: 0.75rem;
   width: 100%;
   background: hsl(0deg, 95%, 65%);
@@ -509,7 +529,7 @@ main .container .left .sidebar {
 .middle .create-post {
   width: 100%;
   margin-top: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 0.4rem 1rem;
   border-radius: 2rem;
 }
@@ -529,7 +549,7 @@ main .container .left .sidebar {
   /* Foto del Post */
 }
 .middle .feeds .feed {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -576,7 +596,7 @@ main .container .left .sidebar {
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid hsl(252deg, 30%, 100%);
+  border: 2px solid var(--color-white);
   margin-left: -0.6rem;
 }
 .middle .liked-by span:first-child {
@@ -600,7 +620,7 @@ main .container .left .sidebar {
 
 /*#region Messages  */
 .right .messages {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   /* Icon font size */
@@ -655,6 +675,7 @@ main .container .left .sidebar {
   border-bottom: 4px solid var(--color-light);
   padding-bottom: 0.5rem;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .right .messages .categories .active {
   border-color: var(--color-dark);
@@ -686,7 +707,7 @@ main .container .left .sidebar {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  border: 3px solid hsl(252deg, 30%, 100%);
+  border: 3px solid var(--color-white);
   background: hsl(120deg, 95%, 65%);
   position: absolute;
   bottom: 0;
@@ -707,7 +728,7 @@ main .container .left .sidebar {
 }
 
 .right .request {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
@@ -735,12 +756,16 @@ main .container .left .sidebar {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -772,7 +797,7 @@ main .container .left .sidebar {
   /*#endregion */
 }
 .customize-theme .card {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
@@ -847,7 +872,7 @@ main .container .left .sidebar {
   background: hsl(202deg, 75%, 60%);
 }
 .customize-theme .choose-color span.active {
-  border: 5px solid hsl(252deg, 30%, 100%);
+  border: 5px solid var(--color-white);
 }
 .customize-theme .background {
   margin-top: 2rem;
@@ -873,12 +898,12 @@ main .container .left .sidebar {
   border: 2px solid var(--color-primary);
 }
 .customize-theme .choose-bg .bg-1 {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   color: hsl(252deg, 30%, 10%);
 }
 .customize-theme .choose-bg .bg-2 {
   background: var(--color-dark);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
 }
 .customize-theme .choose-bg .bg-3 {
   background: hsl(252deg, 30%, 10%);
@@ -900,12 +925,16 @@ main .container .left .sidebar {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -929,7 +958,7 @@ main .container .left .sidebar {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: hsl(252deg, 30%, 17%);
+  color: var(--color-dark);
   background-color: var(--color-light);
   overflow-x: hidden;
 }
@@ -960,13 +989,17 @@ img {
   font-size: 0.9rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .btn:hover {
   opacity: 0.8;
 }
 
 .btn-primary {
   background: var(--color-primary);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
 }
 
 /*#endregion */
@@ -985,12 +1018,16 @@ img {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -1004,12 +1041,16 @@ img {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -1069,7 +1110,7 @@ main .container .left {
 
 main .container .left .profile {
   padding: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
@@ -1079,7 +1120,7 @@ main .container .left .profile {
 
 main .container .left .sidebar {
   margin-top: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 2rem;
 }
 
@@ -1119,7 +1160,7 @@ main .container .left .sidebar {
 }
 .left .sidebar i .notification-count {
   background: hsl(0deg, 95%, 65%);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
   font-size: 0.7rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1163,7 +1204,7 @@ main .container .left .sidebar {
   top: 0;
   left: 110%;
   width: 30rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   -webkit-box-sizing: 0 0 2rem var(--color-primary);
@@ -1178,7 +1219,7 @@ main .container .left .sidebar {
   width: 1.2rem;
   height: 1.2rem;
   display: block;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   position: absolute;
   left: -0.6rem;
   -webkit-transform: rotate(45deg);
@@ -1243,7 +1284,7 @@ main .container .left .sidebar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
   font-size: 0.75rem;
   width: 100%;
   background: hsl(0deg, 95%, 65%);
@@ -1293,7 +1334,7 @@ main .container .left .sidebar {
 .middle .create-post {
   width: 100%;
   margin-top: 1rem;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 0.4rem 1rem;
   border-radius: 2rem;
 }
@@ -1313,7 +1354,7 @@ main .container .left .sidebar {
   /* Foto del Post */
 }
 .middle .feeds .feed {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -1360,7 +1401,7 @@ main .container .left .sidebar {
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid hsl(252deg, 30%, 100%);
+  border: 2px solid var(--color-white);
   margin-left: -0.6rem;
 }
 .middle .liked-by span:first-child {
@@ -1384,7 +1425,7 @@ main .container .left .sidebar {
 
 /*#region Messages  */
 .right .messages {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   border-radius: 1rem;
   padding: 1rem;
   /* Icon font size */
@@ -1439,6 +1480,7 @@ main .container .left .sidebar {
   border-bottom: 4px solid var(--color-light);
   padding-bottom: 0.5rem;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .right .messages .categories .active {
   border-color: var(--color-dark);
@@ -1470,7 +1512,7 @@ main .container .left .sidebar {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  border: 3px solid hsl(252deg, 30%, 100%);
+  border: 3px solid var(--color-white);
   background: hsl(120deg, 95%, 65%);
   position: absolute;
   bottom: 0;
@@ -1491,7 +1533,7 @@ main .container .left .sidebar {
 }
 
 .right .request {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
@@ -1519,12 +1561,16 @@ main .container .left .sidebar {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -1556,7 +1602,7 @@ main .container .left .sidebar {
   /*#endregion */
 }
 .customize-theme .card {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 3rem;
   border-radius: 1rem;
   width: 50%;
@@ -1631,7 +1677,7 @@ main .container .left .sidebar {
   background: hsl(202deg, 75%, 60%);
 }
 .customize-theme .choose-color span.active {
-  border: 5px solid hsl(252deg, 30%, 100%);
+  border: 5px solid var(--color-white);
 }
 .customize-theme .background {
   margin-top: 2rem;
@@ -1657,12 +1703,12 @@ main .container .left .sidebar {
   border: 2px solid var(--color-primary);
 }
 .customize-theme .choose-bg .bg-1 {
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   color: hsl(252deg, 30%, 10%);
 }
 .customize-theme .choose-bg .bg-2 {
   background: var(--color-dark);
-  color: hsl(252deg, 30%, 100%);
+  color: var(--color-white);
 }
 .customize-theme .choose-bg .bg-3 {
   background: hsl(252deg, 30%, 10%);
@@ -1682,12 +1728,16 @@ main .container .left .sidebar {
 /* Font Family & Weight */
 :root {
   --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
   /* Position Sticky Rules */
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
   --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
 }
 
 /* Palette Colori */
@@ -1698,7 +1748,7 @@ main .container .left .sidebar {
 /* Tag navbar principale */
 #site_nav {
   width: 100%;
-  background: hsl(252deg, 30%, 100%);
+  background: var(--color-white);
   padding: 0.7rem 0;
   position: fixed;
   top: 0;

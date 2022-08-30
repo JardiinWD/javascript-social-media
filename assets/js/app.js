@@ -36,10 +36,19 @@ import { changeBackground } from './theme.js'; // Funzione per cambio colore tem
 /////////////////////////////
 // Import delle mie function/variabili per manipolazione dom
 import { feedsDomManipulation } from './function.js'; // Import della funzione per manipolazione Feeds
+import { storiesDomManipulation } from './function.js'; // Import della funzione per manipolazione stories
+import { menuItemsManipulation } from './function.js'; // Import della funzione per manipolazione stories
 
 
 
 //#endregion
+
+//#region Invoke Functions
+feedsDomManipulation() // Manipolazione feeds
+storiesDomManipulation() // Manipolazione Stories
+menuItemsManipulation() // Manipolazione primi 2 links
+//#endregion 
+
 
 //#region SideBar laterale
 menuItems.forEach(element => {

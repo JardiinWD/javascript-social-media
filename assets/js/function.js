@@ -32,6 +32,16 @@ export function querySelector(element) {
     return document.querySelector(element)
 }
 
+/** Funzione per leggere ID specifici
+ * 
+ * @param {string} element il mio ID nel DOM
+ * @returns 
+ */
+export function getElementById(element) {
+    return document.getElementById(element)
+}
+
+
 /** Funzione per filtrare messaggi
  * 
  */
@@ -60,7 +70,7 @@ export async function getData(url) {
     /* Started API Call to my JSON file */
     try {
         data = await response.json();
-        console.log(data); // I look into the console
+        // console.log(data); // I look into the console
         return data // i need to return my data
     }
     // Take the error if needed
@@ -70,6 +80,7 @@ export async function getData(url) {
     return response; // I need to return my response
 }
 
+/** Funzione per inserire dinamicamente i posts (non creati dall'utente) */
 export async function feedsDomManipulation() {
     const feedsPage = querySelector('.feeds') // Mio wrapper principale
 
@@ -108,18 +119,18 @@ export async function feedsDomManipulation() {
                 <div class="action-buttons">
                     <!-- /.interaction-buttons -->
                     <div class="interaction-buttons">
-                        <!-- /.uil uil-heart -->
-                        <span><i class="uil uil-heart"></i></span>
-                        <!-- /.uil uil-comment-dots -->
-                        <span><i class="uil uil-comment-dots"></i></span>  
-                        <!-- /.uil uil-share-alt -->
-                        <span><i class="uil uil-share-alt"></i></span>  
+                        <!-- /.uil pointer uil-heart -->
+                        <span><i class="uil pointer uil-heart"></i></span>
+                        <!-- /.uil pointer uil-comment-dots -->
+                        <span><i class="uil pointer uil-comment-dots"></i></span>  
+                        <!-- /.uil pointer uil-share-alt -->
+                        <span><i class="uil pointer uil-share-alt"></i></span>  
                     </div>
                     <!-- /.bookmark -->
                     <div class="bookmark">
                         <!-- Per farla solid al click : <i class="uis uis-bookmark"></i> -->
-                        <!-- /.uil uil-bookmark-full -->
-                        <span><i class="uil uil-bookmark-full"></i></span>
+                        <!-- /.uil pointer uil-bookmark-full -->
+                        <span><i class="uil pointer uil-bookmark-full"></i></span>
                     </div>
                 </div>
                 <!-- /.liked-by -->
@@ -148,6 +159,67 @@ export async function feedsDomManipulation() {
     })
 }
 
-feedsDomManipulation()
+/** Function per Manipolare la sezione delle stories utente
+ * 
+ */
+export async function storiesDomManipulation() {
+    const siteStories = getElementById('siteStories') // Mio wrapper principale
+    // Invoke my function
+    let data = await getData('./assets/json/stories.json')
+    // console.log(data);
+    data.forEach(element => {
+        let singleStory =
+            `
+            <!-- /.story -->
+            <div class="story">
+                <!-- /.profile-picture -->
+                <div class="profile-picture">
+                    <img src="${element.stories_img}">
+                </div>
+                <!-- /.name -->
+                <p class="name">${element.user_story}</p>
+            </div>
+            `
+        return siteStories.insertAdjacentHTML('beforeend', singleStory)
+    })
+}
+
+export async function menuItemsManipulation() {
+    const sideBarWrapper = querySelector('.sidebar')
+    // Invoke my function
+    let data = await getData('./assets/json/menuItems.json')
+    const [firstLinks, secondLinks, ...othersLinks] = data
+    // Ora unisco i due link che mi servono
+    const joinsAfterLinks = [firstLinks, secondLinks]
+    // console.log(firstLinks); // Primo link che mi serve
+    // console.log(secondLinks); // Secondo link che mi serve
+    // console.log(joinsAfterLinks);
+    // console.log(othersLinks); // Altri link sulla quale dovrò fare forEach
+
+    // Eseguo Primo ForEach
+    joinsAfterLinks.forEach(element => {
+        let firstTwoLinks =
+            `
+            <a href="${element.a_ref}" class="${element.a_class}">
+                <span><i class="${element.icon}"></i></span> <h3>${element.name}</h3>                                            
+            </a>
+            `
+        return sideBarWrapper.insertAdjacentHTML('afterbegin', firstTwoLinks)
+    })
+    // Eseguo Secondo ForEach
+    othersLinks.forEach(element => {
+        let remainingLinks =
+            `
+            <a id="${element.id}" href="${element.a_ref}" class="${element.a_class}">
+                <span><i class="${element.icon}"></i></span> <h3>${element.name}</h3>                                            
+            </a>
+            `
+        return sideBarWrapper.insertAdjacentHTML('beforeend', remainingLinks)
+    })
+}
+
+
+
+
 
 

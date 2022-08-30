@@ -1,0 +1,42 @@
+[
+    {
+        "a_class" : "menu-item ",
+        "a_ref" : "#",
+        "icon" : "uil uil-compass",
+        "name" : "Explore"
+    },
+    {
+        "a_class" : "menu-item active",
+        "a_ref" : "#",
+        "icon" : "uil uil-home",
+        "name" : "Home"
+    },
+    {
+        "a_class" : "menu-item",
+        "a_ref" : "#",
+        "id" : "",
+        "icon" : "uil uil-bookmark",
+        "name" : "Bookmarks"
+    },
+    {
+        "a_class" : "menu-item",
+        "a_ref" : "#",
+        "id" : "",
+        "icon" : "uil-chart-line",
+        "name" : "Analytics"
+    },
+    {
+        "a_class" : "menu-item",
+        "a_ref" : "#",
+        "id" : "theme",
+        "icon" : "uil uil-palette",
+        "name" : "Theme"
+    },
+    {
+        "a_class" : "menu-item",
+        "a_ref" : "#",
+        "id" : "",
+        "icon" : "uil uil-setting",
+        "name" : "Settings"
+    }    
+]

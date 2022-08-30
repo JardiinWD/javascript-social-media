@@ -47,6 +47,11 @@ img {
     font-size: 0.9rem;
 }
 
+/* Regola generale per il Pointer su richiesta */
+.pointer {
+    cursor: pointer;
+}
+
 .btn:hover {
     opacity: 0.8;
 }

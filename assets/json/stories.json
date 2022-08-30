@@ -1,0 +1,26 @@
+[
+    {
+        "stories_img" : "./assets/img/profile-8.jpg",
+        "user_story" : "Your Story"
+    },
+    {
+        "stories_img" : "./assets/img/profile-9.jpg",
+        "user_story" : "Lilla James"
+    },
+    {
+        "stories_img" : "./assets/img/profile-10.jpg",
+        "user_story" : "Winnie Hale"
+    },
+    {
+        "stories_img" : "./assets/img/profile-11.jpg",
+        "user_story" : "Daniel Bale"
+    },
+    {
+        "stories_img" : "./assets/img/profile-12.jpg",
+        "user_story" : "Jane Doe"
+    },
+    {
+        "stories_img" : "./assets/img/profile-13.jpg",
+        "user_story" : "Tina White"
+    }
+]

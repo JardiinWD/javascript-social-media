@@ -365,9 +365,10 @@ main .container .left .sidebar {
         border-bottom: 4px solid var(--color-light);
         padding-bottom: 0.5rem;
         font-size: 0.85rem;
+        cursor: pointer;
     }
     .categories .active {
-        border-color: $color-dark;
+        border-color: var(--color-dark);
     }
     /* Message Class */
     .message {
