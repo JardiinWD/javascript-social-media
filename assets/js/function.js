@@ -2,7 +2,7 @@
 import { menuItems } from './app.js';
 import { messageSearch } from './app.js';
 import { message } from './app.js';
-
+import { categoriesZone } from './app.js';
 
 //#endregion
 
@@ -40,7 +40,6 @@ export function querySelector(element) {
 export function getElementById(element) {
     return document.getElementById(element)
 }
-
 
 /** Funzione per filtrare messaggi
  * 
@@ -184,37 +183,10 @@ export async function storiesDomManipulation() {
     })
 }
 
-export async function menuItemsManipulation() {
-    const sideBarWrapper = querySelector('.sidebar')
-    // Invoke my function
-    let data = await getData('./assets/json/menuItems.json')
-    const [firstLinks, secondLinks, ...othersLinks] = data
-    // Ora unisco i due link che mi servono
-    const joinsAfterLinks = [firstLinks, secondLinks]
-    // console.log(firstLinks); // Primo link che mi serve
-    // console.log(secondLinks); // Secondo link che mi serve
-    // console.log(joinsAfterLinks);
-    // console.log(othersLinks); // Altri link sulla quale dovrò fare forEach
-
-    // Eseguo Primo ForEach
-    joinsAfterLinks.forEach(element => {
-        let firstTwoLinks =
-            `
-            <a href="${element.a_ref}" class="${element.a_class}">
-                <span><i class="${element.icon}"></i></span> <h3>${element.name}</h3>                                            
-            </a>
-            `
-        return sideBarWrapper.insertAdjacentHTML('afterbegin', firstTwoLinks)
-    })
-    // Eseguo Secondo ForEach
-    othersLinks.forEach(element => {
-        let remainingLinks =
-            `
-            <a id="${element.id}" href="${element.a_ref}" class="${element.a_class}">
-                <span><i class="${element.icon}"></i></span> <h3>${element.name}</h3>                                            
-            </a>
-            `
-        return sideBarWrapper.insertAdjacentHTML('beforeend', remainingLinks)
+/** Funzione per rimuovere classe attiva */
+export const removeCategoriesSelector = () => {
+    categoriesZone.forEach(category => {
+        category.classList.remove('active')
     })
 }
 

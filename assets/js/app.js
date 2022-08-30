@@ -5,7 +5,7 @@ export const menuItems = querySelectorAll('.menu-item')
 //Messaggi
 export const messagesNotification = querySelector('#messages-notifications')
 export const messages = querySelector('.messages')
-export const message = messages.querySelectorAll('.message')
+export let message = messages.querySelectorAll('.message')
 export const messageSearch = document.querySelector('#message-search')
 //Tema
 export const theme = querySelector('#theme') // Link della sideBar
@@ -17,7 +17,8 @@ export var root = document.querySelector(':root'); // Seleziono l'elemento radic
 export const colorPalette = document.querySelectorAll('.choose-color span')
 // Colore di Background
 export const colorBackground = document.querySelectorAll('.background .choose-bg div')
-console.log(colorBackground);
+// Categorie zona DX
+export const categoriesZone = querySelectorAll('.categories h6')
 
 //#endregion 
 
@@ -37,8 +38,7 @@ import { changeBackground } from './theme.js'; // Funzione per cambio colore tem
 // Import delle mie function/variabili per manipolazione dom
 import { feedsDomManipulation } from './function.js'; // Import della funzione per manipolazione Feeds
 import { storiesDomManipulation } from './function.js'; // Import della funzione per manipolazione stories
-import { menuItemsManipulation } from './function.js'; // Import della funzione per manipolazione stories
-
+import { removeCategoriesSelector } from './function.js';
 
 
 //#endregion
@@ -46,7 +46,6 @@ import { menuItemsManipulation } from './function.js'; // Import della funzione 
 //#region Invoke Functions
 feedsDomManipulation() // Manipolazione feeds
 storiesDomManipulation() // Manipolazione Stories
-menuItemsManipulation() // Manipolazione primi 2 links
 //#endregion 
 
 
@@ -166,7 +165,44 @@ colorBackground.forEach(color => {
     })
 })
 
-
-
-
 //#endregion
+
+categoriesZone.forEach(category => {
+    // Seleziono la mia classe general e la disattivo da subito
+    const generalBox = document.querySelector('.generalBox')
+    generalBox.style.display = 'none' // La disattivo da subito
+    // Seleziono la mia classe richieste e la disattivo da subito
+    const requestBox = document.querySelector('.requestBox')
+    requestBox.style.display = 'none' // La disattivo da subito
+
+    category.addEventListener('click', () => {
+        removeCategoriesSelector() // Funzione per disattivare classe attiva
+        category.classList.toggle('active') // La riattivo al click
+
+
+        if (category.classList.contains('primary')) {
+            // Tramite for of attivo la proprietà flex a tutti
+            for (const single of message) single.style.display = 'flex'
+            generalBox.style.display = 'none'
+            requestBox.style.display = 'none'
+        }
+        else if (category.classList.contains('general')) {
+            // Tramite for of attivo la proprietà none a tutti
+            for (const single of message) single.style.display = 'none'
+            generalBox.style.display = 'flex'
+            requestBox.style.display = 'none'
+        }
+        else if (category.classList.contains('message-requests')) {
+            for (const single of message) single.style.display = 'none'
+            generalBox.style.display = 'none'
+            requestBox.style.display = 'flex'
+        }
+        category.classList.add('active')
+
+    })
+})
+
+
+
+
+//
