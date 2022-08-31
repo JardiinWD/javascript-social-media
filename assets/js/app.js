@@ -215,7 +215,28 @@ categoriesZone.forEach(category => {
 // Selezione della singola richiesta di amicizia ed evento associato
 for (let i = 0; i < requestBox.length; i++) {
     requestBox[i].addEventListener('click', () => {
-        console.log(`Sono il console log alla posizione ${i}`);
+        let accept = requestBox[i].querySelector('.accept') // Seleziono i tasti accetta
+        let decline = requestBox[i].querySelector('.decline') // Seleziono i tasti Decline 
+        let successMessage = requestBox[i].querySelector('.message-success') // Seleziono i messaggi Success 
+        let declineMessage = requestBox[i].querySelector('.message-decline') // Seleziono i messaggi Decline 
+        // Avvio ciclo sui tasti accetta
+        accept.addEventListener('click', () => {
+            successMessage.style.display = 'flex' // Attivo la classe per accettare
+            // Avvio il mio timeout per far scomparire entrambi
+            setTimeout(() => {
+                successMessage.style.display = 'none'
+                requestBox[i].style.display = 'none'
+            }, 1000)
+        })
+        // Avvio ciclo sui tasti decline
+        decline.addEventListener('click', () => {
+            declineMessage.style.display = 'flex' // Attivo la classe per declinare
+            // Avvio il mio timeout per far scomparire entrambi
+            setTimeout(() => {
+                declineMessage.style.display = 'none'
+                requestBox[i].style.display = 'none'
+            }, 1000)
+        })
     })
 }
 

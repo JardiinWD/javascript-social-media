@@ -424,6 +424,7 @@ main .container .left .sidebar {
     border-radius: $card-border-radius;
     margin-bottom: 0.7rem;
     padding: 0.45rem;
+    position: relative;
     .info,
     .action {
         display: flex;
@@ -445,6 +446,45 @@ main .container .left .sidebar {
         background-size: cover;
     }
 }
+
+.message-success,
+.message-decline {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 0;
+    transform: translate(-50%, -50%);
+    border-radius: $card-border-radius;
+    filter: brightness(125%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-success {
+    background-color: $color-success;
+    display: none;
+}
+
+.message-decline {
+    background-color: $color-danger;
+    display: none;
+}
+
+.message-success h4,
+.message-decline h4 {
+    color: var(--color-dark);
+}
+
+
+
+
+
+
 
 
 

@@ -738,6 +738,7 @@ main .container .left .sidebar {
   border-radius: 1rem;
   margin-bottom: 0.7rem;
   padding: 0.45rem;
+  position: relative;
 }
 .friend-requests .request .info,
 .friend-requests .request .action {
@@ -759,6 +760,47 @@ main .container .left .sidebar {
   width: 40px;
   height: 40px;
   background-size: cover;
+}
+
+.message-success,
+.message-decline {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-success {
+  background-color: hsl(120deg, 95%, 65%);
+  display: none;
+}
+
+.message-decline {
+  background-color: hsl(0deg, 95%, 65%);
+  display: none;
+}
+
+.message-success h4,
+.message-decline h4 {
+  color: var(--color-dark);
 }
 
 /*#endregion */
@@ -1556,6 +1598,7 @@ main .container .left .sidebar {
   border-radius: 1rem;
   margin-bottom: 0.7rem;
   padding: 0.45rem;
+  position: relative;
 }
 .friend-requests .request .info,
 .friend-requests .request .action {
@@ -1577,6 +1620,47 @@ main .container .left .sidebar {
   width: 40px;
   height: 40px;
   background-size: cover;
+}
+
+.message-success,
+.message-decline {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-success {
+  background-color: hsl(120deg, 95%, 65%);
+  display: none;
+}
+
+.message-decline {
+  background-color: hsl(0deg, 95%, 65%);
+  display: none;
+}
+
+.message-success h4,
+.message-decline h4 {
+  color: var(--color-dark);
 }
 
 /*#endregion */
