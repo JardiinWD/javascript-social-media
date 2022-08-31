@@ -1,0 +1,38 @@
+[
+    {
+        "img" : "./assets/img/profile-1.jpg",
+        "name" : "Keke Benjamin",
+        "text" : "ha accettato la tua richiesta",
+        "when" : "2 days ago"
+    },
+    {
+        "img" : "./assets/img/profile-2.jpg",
+        "name" : "John Doe",
+        "text" : "ha commentato il tuo post",
+        "when" : "1 ora fa"
+    },
+    {
+        "img" : "./assets/img/profile-3.jpg",
+        "name" : "Donald Trump",
+        "text" : "ha commentato il tuo post",
+        "when" : "1 ora fa"
+    },
+    {
+        "img" : "./assets/img/profile-4.jpg",
+        "name" : "Mary Oppong e altri 283",
+        "text" : "hanno messo like al tuo post",
+        "when" : "1 ora fa"
+    },
+    {
+        "img" : "./assets/img/profile-5.jpg",
+        "name" : "Doris Y. Lartey",
+        "text" : "ha commentato un post in cui sei taggato",
+        "when" : "1 ora fa"
+    },
+    {
+        "img" : "./assets/img/profile-6.jpg",
+        "name" : "Jane Doe",
+        "text" : "ha commentato un post in cui sei taggato",
+        "when" : "1 ora fa"
+    }    
+]

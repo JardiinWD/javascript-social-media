@@ -42,14 +42,15 @@ import { changeBackground } from './theme.js'; // Funzione per cambio colore tem
 // Import delle mie function/variabili per manipolazione dom
 import { feedsDomManipulation } from './function.js'; // Import della funzione per manipolazione Feeds
 import { storiesDomManipulation } from './function.js'; // Import della funzione per manipolazione stories
-import { removeCategoriesSelector } from './function.js';
+import { removeCategoriesSelector } from './function.js'; // Rimuovere selettore delle categorie
+import { notificationsDomManipulation } from './function.js'; // Funzione per notifiche Dinamiche
 
 //#endregion
 
 //#region Invoke Functions
 feedsDomManipulation() // Manipolazione feeds
 storiesDomManipulation() // Manipolazione Stories
-
+notificationsDomManipulation() // Manipolazione notifiche
 //#endregion 
 
 //#region SideBar laterale

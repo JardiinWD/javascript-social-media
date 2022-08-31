@@ -138,7 +138,7 @@ export async function feedsDomManipulation() {
                     <span><img src="${element.liked_users[0]}"></span>
                     <span><img src="${element.liked_users[1]}"></span>
                     <span><img src="${element.liked_users[2]}"></span>
-                    <p>Liked by <b>${element.liked_by}</b> and <b>${element.liked_others}</b></p>
+                    <p>Piace a <b>${element.liked_by}</b> and <b>${element.liked_others}</b></p>
                 </div>
                 <!-- /.caption -->
                 <div class="caption">
@@ -150,7 +150,7 @@ export async function feedsDomManipulation() {
                 </div>
                 <!-- /.text-muted -->
                 <div class="text-muted comments">
-                    View all 277 comments
+                    Visualizza tutti i commenti
                 </div>
             </div>
             `
@@ -180,6 +180,31 @@ export async function storiesDomManipulation() {
             </div>
             `
         return siteStories.insertAdjacentHTML('beforeend', singleStory)
+    })
+}
+
+/** Funzione per Manipolare i dati nelle notifiche */
+export async function notificationsDomManipulation() {
+    const notificationGroup = querySelector('.notifications-popup') // Mio wrapper principale
+    // Invoke my function
+    let data = await getData('./assets/json/notifications.json')
+    data.forEach(element => {
+        let singleNotification =
+            `
+            <div>
+                <!-- /.profile-picture -->
+                <div class="profile-picture">
+                    <img src="${element.img}">
+                </div>
+                <!-- /.notification-body -->
+                <div class="notification-body">
+                    <b>${element.name}</b> ${element.text}
+                    <!-- /.text-muted -->
+                    <small class="text-muted">${element.when}</small>
+                </div>
+            </div>
+            `
+        return notificationGroup.insertAdjacentHTML('beforeend', singleNotification)
     })
 }
 

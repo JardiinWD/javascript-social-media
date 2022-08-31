@@ -172,7 +172,12 @@ main .container .left .sidebar {
     display: flex;
     align-items: start;
     gap: 1rem;
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem;
+    width: 100%;  
+}
+
+.left .notifications-popup > div:hover {
+    background-color: var(--color-light);
 }
 
 .left .notifications-popup small {
