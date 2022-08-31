@@ -85,7 +85,7 @@ export async function feedsDomManipulation() {
 
     // Invoke my function
     let data = await getData('./assets/json/posts.json')
-    // console.log(data[0].liked_users[0]); // Da usare nel forEach
+    // console.log(data); // Da usare nel forEach
     data.forEach(element => {
         let singleFeed =
             `
@@ -183,7 +183,7 @@ export async function storiesDomManipulation() {
     })
 }
 
-/** Funzione per rimuovere classe attiva */
+/** Funzione per rimuovere classe attiva sulle categorie */
 export const removeCategoriesSelector = () => {
     categoriesZone.forEach(category => {
         category.classList.remove('active')

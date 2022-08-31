@@ -547,7 +547,79 @@ main .container .left .sidebar {
 /*#endregion */
 /*#region Feeds */
 .middle .feeds {
+  /* Questo singolo Post Utente */
   /* Foto del Post */
+}
+.middle .feeds .post-card {
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+.middle .feeds .post-card .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.middle .feeds .post-card .user .profile-picture {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.middle .feeds .post-card .user .ingo h3 {
+  font-size: 1rem;
+  margin-bottom: -0.25rem;
+}
+.middle .feeds .post-card .user .ingo small {
+  font-size: 0.75rem;
+}
+.middle .feeds .post-card textarea {
+  border-radius: 10px;
+  background-color: var(--color-light);
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  margin-top: 10px;
+}
+.middle .feeds .post-card .action-buttons {
+  width: 100%;
+}
+.middle .feeds .post-card .action-buttons .interaction-buttons {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem;
 }
 .middle .feeds .feed {
   background: var(--color-white);
@@ -1407,7 +1479,79 @@ main .container .left .sidebar {
 /*#endregion */
 /*#region Feeds */
 .middle .feeds {
+  /* Questo singolo Post Utente */
   /* Foto del Post */
+}
+.middle .feeds .post-card {
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+.middle .feeds .post-card .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.middle .feeds .post-card .user .profile-picture {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.middle .feeds .post-card .user .ingo h3 {
+  font-size: 1rem;
+  margin-bottom: -0.25rem;
+}
+.middle .feeds .post-card .user .ingo small {
+  font-size: 0.75rem;
+}
+.middle .feeds .post-card textarea {
+  border-radius: 10px;
+  background-color: var(--color-light);
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  margin-top: 10px;
+}
+.middle .feeds .post-card .action-buttons {
+  width: 100%;
+}
+.middle .feeds .post-card .action-buttons .interaction-buttons {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.6rem;
 }
 .middle .feeds .feed {
   background: var(--color-white);

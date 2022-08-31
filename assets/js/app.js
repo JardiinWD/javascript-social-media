@@ -21,6 +21,8 @@ export const colorBackground = document.querySelectorAll('.background .choose-bg
 export const categoriesZone = querySelectorAll('.categories h6')
 // Richieste Zona DX
 const requestBox = querySelectorAll('.requestBox .request')
+// Recupero il mio button per il submit del nuovo post
+const postButton = document.getElementById('postButton') // Mio button per creazione Post
 
 //#endregion 
 
@@ -42,12 +44,12 @@ import { feedsDomManipulation } from './function.js'; // Import della funzione p
 import { storiesDomManipulation } from './function.js'; // Import della funzione per manipolazione stories
 import { removeCategoriesSelector } from './function.js';
 
-
 //#endregion
 
 //#region Invoke Functions
 feedsDomManipulation() // Manipolazione feeds
 storiesDomManipulation() // Manipolazione Stories
+
 //#endregion 
 
 //#region SideBar laterale
@@ -168,6 +170,7 @@ colorBackground.forEach(color => {
 
 //#endregion
 
+//#region Categorie (messaggi, Richieste)
 categoriesZone.forEach(category => {
     // Seleziono la mia classe general e la disattivo da subito
     const generalBox = document.querySelector('.generalBox')
@@ -239,7 +242,64 @@ for (let i = 0; i < requestBox.length; i++) {
         })
     })
 }
+//#endregion
 
-
-
-
+//#region Creazione Post al click
+postButton.addEventListener('click', (e) => {
+    e.preventDefault() // Prevengo il default del submit
+    const feedsPage = querySelector('.feeds') // Mio wrapper principale dove ciclo
+    let inputTry = document.getElementById('create-post').value // Input del mio utente
+    // Ora ottengo i minuti esatti del post
+    const date = new Date();
+    // Creo oggetto con le mie variabili necessarie
+    const myPost = {
+        input: inputTry,
+        user_img: './assets/img/profile-8.jpg',
+        username: 'Alessandro',
+        user_zone: 'Zurigo',
+        hour: date.getHours(),
+        minute: date.getMinutes()
+    }
+    // Creo il singolo Post (in questo caso quello del mio input)
+    let singlePost =
+        `
+            <div class="post-card">
+                <div class="user">
+                    <!-- /.profile-picture -->
+                    <div class="profile-picture">
+                        <img src="${myPost.user_img}">
+                    </div>
+                    <!-- /.ingo -->
+                    <div class="ingo">
+                        <h3>${myPost.username}</h3>
+                        <small> ${myPost.user_zone}, ${myPost.hour}:${myPost.minute}</small>
+                    </div>
+                </div>
+                <textarea disabled name="prova" id="provaInput" cols="30" rows="3">${myPost.input}</textarea> 
+                <div class="action-buttons">
+                    <!-- /.interaction-buttons -->
+                    <div class="interaction-buttons">
+                        <!-- /.left-buttons -->
+                        <div class="left-buttons">
+                            <!-- /.uil pointer uil-heart -->
+                            <span><i class="uil pointer uil-heart"></i></span>
+                            <!-- /.uil pointer uil-comment-dots -->
+                            <span><i class="uil pointer uil-comment-dots"></i></span>  
+                            <!-- /.uil pointer uil-share-alt -->
+                            <span><i class="uil pointer uil-share-alt"></i></span>  
+                        </div>
+                        <!-- /.right-button -->
+                        <div class="right-button">
+                            <span><i class="uil pointer uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    // Lo pusho all'interno dei feeds
+    feedsPage.insertAdjacentHTML('afterbegin', singlePost)
+    // Ora che ho pushato seleziono la mia cards che ha display none
+    const myPostCard = querySelector('.post-card')
+    myPostCard.style.display = 'flex' // Le abilitò la proprietà flex
+})
+//#endregion

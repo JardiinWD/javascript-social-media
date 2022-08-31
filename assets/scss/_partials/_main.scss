@@ -258,6 +258,57 @@ main .container .left .sidebar {
 
 /*#region Feeds */
 .middle .feeds {
+    /* Questo singolo Post Utente */
+    .post-card {
+        background: var(--color-white);
+        border-radius: $card-border-radius;
+        padding: $card-padding;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        .user {
+            display: flex;
+            flex-direction:row;
+            margin-bottom: 10px;
+            align-self: flex-start;
+            .profile-picture {
+                width: 40px;
+                height: 40px;
+                margin-top: 5px;
+                margin-right: 10px;
+            }
+            .ingo h3 {
+                font-size: 1rem;
+                margin-bottom: -0.25rem;
+            }
+            .ingo small {
+                font-size: 0.75rem;
+            }
+        }
+        textarea {
+            border-radius: 10px;
+            background-color: var(--color-light);
+            resize: none;
+            width: 100%;
+            height: 100%;
+            font-family: $font-family;
+            padding: 0.5rem;
+            margin-top: 10px;
+        }
+        .action-buttons {
+            width: 100%;
+            .interaction-buttons {
+                font-size: 1.4rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0.6rem;
+            }   
+        }
+    }
     .feed {
         background: var(--color-white);
         border-radius: $card-border-radius;
