@@ -491,6 +491,7 @@ main .container .left .sidebar {
   background: hsl(0deg, 95%, 65%);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .middle .stories .story::before {
   content: "";
@@ -1428,6 +1429,7 @@ main .container .left .sidebar {
   background: hsl(0deg, 95%, 65%);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .middle .stories .story::before {
   content: "";

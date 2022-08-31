@@ -213,6 +213,7 @@ main .container .left .sidebar {
         background: $color-danger;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
     }
     .story::before {
         content: "";
